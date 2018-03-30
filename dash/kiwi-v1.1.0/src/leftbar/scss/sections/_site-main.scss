@@ -1,0 +1,35 @@
+/* [3. Wrapper / .site-wrapper] */
+.site-wrapper {
+	display: flex;
+}
+
+/* [4. Wrapper / .site-main] */
+.site-main {
+	flex: 0 1 5000px;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	@include media-breakpoint-up(md) {
+		margin-left: $menubar-width;
+		body.menubar-fold & {
+			margin-left: 0;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		transition: transform .2s;
+		body.menubar-open & {
+			transform: translate3d(#{$menubar-width}, 0, 0);
+		}
+	}
+}
+
+/* [5. Content / .site-content] */
+.site-content {
+	padding: $grid-gutter-width-base;
+	flex: 1 1 calc(100vh - #{round(2.1 * $navbar-height)});
+
+	@include media-breakpoint-down(xs) {
+		padding: $grid-gutter-width-base / 2;
+	}
+}

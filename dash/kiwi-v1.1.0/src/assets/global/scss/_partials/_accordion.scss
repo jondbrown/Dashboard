@@ -1,0 +1,51 @@
+/* Accordions */
+.accordion-custom {
+	.card {
+		border: none;
+		border-radius: $border-radius;
+	}
+
+	.card-header,
+	.card-block {
+		background: #fff;
+		border: 1px solid $border-color-default;
+	}
+
+	.card-header {
+		padding: 0;
+	}
+
+	.card-heading {
+		display: block;
+		width: 100%;
+		cursor: pointer;
+		padding: 1rem;
+		position: relative;
+		font-size: 1rem;
+		font-weight: 400;
+	}
+	
+	.card-block {
+		padding: 1rem;
+		font-size: 1rem;
+		color: $text-color;
+		line-height: 1.6;
+	}
+
+	.card-heading::after {
+		content: '\f067';
+		font: normal normal normal 14px/1 FontAwesome;
+		line-height: 2rem;
+		font-size: 1rem;
+		text-align: center;
+		display: inline-block;
+		color: $text-color;
+		position: absolute;
+		right: 1rem;
+		top: .75rem;
+	}
+
+	.card-heading[aria-expanded="true"]::after {
+		content: '\f068';
+	}
+}

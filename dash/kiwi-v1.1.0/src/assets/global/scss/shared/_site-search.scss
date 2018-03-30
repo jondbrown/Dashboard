@@ -1,0 +1,68 @@
+/* [7. Search / .site-search] */
+.site-search {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: $backdrop-zIndex;
+	display: none;
+}
+
+.site-search-form {
+	z-index: 1;
+	position: relative;
+	margin-top: 100px;
+	margin-right: 5%;
+	margin-left: 5%;
+	width: 90%;
+	.search-field {
+		@include reset-input{
+			background: none;
+		};
+		font-size: 3rem;
+		color: #333;
+		border-bottom: 3px solid #333;
+		padding-left: 64px;
+		padding-right: 24px;
+		width: 100%;
+	}
+	.search-icon {
+		position: absolute;
+		left: 0;
+		top: 0;
+		font-size: 3rem;
+	}
+
+	@include media-breakpoint-down(sm) {
+		.search-field {
+			font-size: 2rem;
+			padding-left: 48px;
+		}
+		.search-icon {
+			font-size: 2rem;
+		}
+	}
+}
+
+.site-search-close {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #fff;
+	background: none;
+	border-radius: 5000px;
+	position: absolute;
+	right: -15px;
+	top: -15px;
+	cursor: pointer;
+	color: #fff;
+}
+
+.site-search-backdrop {
+	background: rgba(0,0,0,.9);
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	z-index: -1;
+}

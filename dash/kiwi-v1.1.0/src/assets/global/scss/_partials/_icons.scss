@@ -1,0 +1,23 @@
+/* Icons */
+.icon {
+	width: 2rem;
+	height: 2rem;
+	border: 1px solid $border-color-default;
+	justify-content: center;
+	align-items: center;
+	display: inline-flex;
+}
+
+.icon-circle {
+	border-radius: 100%;
+}
+
+.icon-sm {
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.icon-lg {
+	width: 3rem;
+	height: 3rem;
+}

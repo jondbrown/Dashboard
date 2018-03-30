@@ -1,0 +1,71 @@
+body.simple-page {
+	background-color: $brand-primary;
+}
+
+.simple-page-wrap {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.simple-page-header {
+	padding: 1rem .5rem;
+	.home-btn {
+		.btn {
+			font-size: 2rem;
+			color: #fff;
+			border: none;
+			opacity: .4;
+			transition: opacity .5s;
+			&:hover,
+			&:focus,
+			&:active {
+				background: none;
+				border: none;
+				opacity: 1;
+				outline: none;
+				box-shadow: none;
+			}
+		}
+	}
+}
+
+.simple-page-content {
+	max-width: 90%;
+	width: 320px;
+}
+
+.simple-page-logo {
+	text-align: center;
+	font-size: 24px;
+	margin-bottom: 24px;
+	a {
+		color: #fff;
+	}
+}
+
+.simple-page-form {
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 24px;
+	margin-bottom: 24px;
+
+	.form-group {
+		margin-bottom: 32px;
+	}
+	input,
+	input:focus,
+	input:active{
+		outline: none;
+		box-shadow: none;
+	}
+
+	input {
+		border: none;
+		border-bottom: 1px solid #eee;
+		height: 40px;
+	}
+	.btn {
+		width: 100%;
+	}
+}

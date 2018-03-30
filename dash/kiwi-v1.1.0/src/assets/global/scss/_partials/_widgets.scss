@@ -1,0 +1,116 @@
+/* [8. Widgets / .widget] */
+.box,
+.widget {
+	background-color: #fff;
+	margin-bottom: 1.5rem;
+	box-shadow: 0 1px 4px 0 rgba(0,0,0,0.14);
+	border-radius: 2px;
+	overflow: hidden;
+	small {
+		font-size: 95%;
+		font-weight: 500;
+	}
+}
+
+.widget-header,
+.widget-body,
+.widget-footer {
+	@include clearfix();
+	padding: 1rem;
+}
+
+.widget-header {
+	display: flex;
+}
+
+.widget-title {
+	font-size: 1rem;
+	font-weight: 500;
+	margin: 0;
+	color: $title-color;
+}
+
+h3.widget-title {
+	font-size: 20px;
+	margin-bottom: 16px;
+	font-weight: 500;
+}
+
+.widget-separator {
+	margin: 0 16px;
+}
+
+.widget p {
+	line-height: 1.8;
+}
+
+
+// StreamLine widgets
+.sl-item {
+	position: relative;
+	padding-bottom: 12px;
+	border-left: 1px solid #ccc;
+	&:before {
+		content: '';
+		position: absolute;
+		left: -6px;
+		top: 0;
+		background-color: #ccc;
+		width: 12px;
+		height: 12px;
+		border-radius: 100%;
+	}
+	&:last-child:after {
+		content: '';
+		position: absolute;
+		left: -3px;
+		bottom: 0;
+		background-color: #ccc;
+		width: 6px;
+		height: 6px;
+		border-radius: 100%;
+	}
+	.sl-content {
+		margin-left: 24px;
+		p {
+			margin: 0;
+		}
+	}
+}
+
+.sl-primary {
+	border-left-color: $brand-primary;
+	&:before,
+	&:last-child:after {
+		background-color: $brand-primary;
+	}
+}
+
+.sl-success {
+	border-left-color: $brand-success;
+	&:before,
+	&:last-child:after {
+		background-color: $brand-success;
+	}
+}
+
+.sl-warning {
+	border-left-color: $brand-warning;
+	&:before,
+	&:last-child:after {
+		background-color: $brand-warning;
+	}
+}
+
+.sl-danger {
+	border-left-color: $brand-danger;
+	&:before,
+	&:last-child:after {
+		background-color: $brand-danger;
+	}
+}
+
+.sl-avatar {
+	position: absolute;
+	left: -22px;
+}

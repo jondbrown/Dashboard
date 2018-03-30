@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Dashboard | Team Not Really</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+	<!-- core plugins -->
+	<link rel="stylesheet" href="../assets/vendor/css/hamburgers.css">
+	<link rel="stylesheet" href="../assets/vendor/bower_components/animate.css/animate.min.css">
+	<link rel="stylesheet" href="../assets/vendor/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css">
+	<link rel="stylesheet" href="../assets/vendor/bower_components/switchery/dist/switchery.min.css">
+	<link rel="stylesheet" href="../assets/vendor/bower_components/sweetalert/dist/sweetalert.css">
+
+	<!-- site-wide styles -->
+	<link rel="stylesheet" href="../assets/vendor/css/bootstrap.css">
+	<link rel="stylesheet" href="css/site.css">
+
+	<!-- plugins for the current page -->
+	<link rel="stylesheet" href="../assets/vendor/owl-carousel/owl.carousel.css">
+
+	<!-- current page styles -->
+	<link rel="stylesheet" href="../assets/examples/css/dashboards/dashboard.v1.css">
+
+	<!-- fonts -->
+	<link rel="stylesheet" href="../assets/vendor/bower_components/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../assets/vendor/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600">
+
+	<script src="../assets/vendor/bower_components/breakpoints.js/dist/breakpoints.min.js"></script>
+	<script>
+		Breakpoints({xs: {min:0,max:575},sm: {min:576,max:767},md: {min:768,max:991},lg: {min:992,max:1199},xl: {min:1200,max:Infinity}});
+	</script>
+</head>
+<body class="menubar-top menubar-light dashboard dashboard-v1">
+	<!--[if lt IE 10]>
+	  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+<nav class="site-navbar navbar fixed-top navbar-toggleable-md navbar-inverse bg-indigo-500">
+		<!-- navbar header -->
+		<div class="navbar-header">
+			<a href="#" class="navbar-brand">
+				<span class="brand-name hidden-fold">GPnow! | Customer 8</span>
+			</a>
+		</div><!-- .navbar-header -->
+		<div class="collapse navbar-collapse" id="site-navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+					<a href="javascript:void(0)" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-hc-lg zmdi-notifications"></i></a>
+					<div class="dropdown-menu media-list float-right animated scaleInDownLeft">
+					<!-- add notifications? -->
+					</div>
+				</li><!-- notification_feature -->
+			</ul>
+		</div><!-- /.navbar-collapse -->
+</nav><!-- .site-navbar -->
+
+<div class="container-fluid"><!-- container -->
+<main class="site-main">
+<div class="site-content">
+
+<div class="row">
+	<div class="col-md-6 col-sm-6 pb-4">
+		<div class="btn-group" role="group">
+		  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    Grade Group
+		  </button>
+		  <div class="dropdown-menu">
+		    <a class="dropdown-item" href="#">All</a>
+		    <a class="dropdown-item" href="#">Another action</a>
+		    <a class="dropdown-item" href="#">Something else here</a>
+		    <a class="dropdown-item" href="#">Separated link</a>
+		  </div>
+		</div><!-- button1 -->
+
+		<div class="btn-group" role="group">
+			<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				Product
+			</button>
+			<div class="dropdown-menu">
+				<a class="dropdown-item" href="#">All</a>
+				<a class="dropdown-item" href="#">Another action</a>
+				<a class="dropdown-item" href="#">Something else here</a>
+				<a class="dropdown-item" href="#">Separated link</a>
+			</div>
+		</div><!-- button2 -->
+	</div><!-- /col -->
+</div><!-- /row -->
+
+<div class="row">
+	<div class="col-md-6 col-sm-6">
+		<div class="widget p-3 clearfix">
+			<div class="float-left">
+				<h3 class="widget-title">Last Order</h3>
+				<small class="text-color"># of Days Since Last Order</small>
+			</div>
+			<span class="float-right fz-lg counter text-primary" data-plugin="counterUp">25</span>
+		</div><!-- /.widget -->
+	</div><!-- TOP BOX 1 -->
+
+	<div class="col-md-6 col-sm-6">
+		<div class="widget p-3 clearfix">
+			<div class="float-left">
+				<h3 class="widget-title">Next Order</h3>
+				<small class="text-color"># of Days for Your Next Order</small>
+			</div>
+			<span class="float-right fz-lg counter text-danger" data-plugin="counterUp">5</span>
+		</div><!-- /.widget -->
+	</div><!-- TOP BOX 2 -->
+</div><!-- /.row -->
+
+<div class="row">
+	<div class="col-lg-3 col-sm-6">
+		<div class="widget stats-widget">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="widget-title text-success"><span class="counter" data-plugin="counterUp">25</span> Days</h3>
+					<small class="text-color">Avg. Delivery Time</small>
+				</div>
+			</div>
+			<footer class="widget-footer bg-primary">
+				<small>% charge</small>
+				<span class="small-chart float-right" id="dash1-sparkline-1"></span>
+			</footer>
+		</div><!-- /.widget -->
+	</div><!-- BOX 1 -->
+
+	<div class="col-lg-3 col-sm-6">
+		<div class="widget stats-widget">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="widget-title text-danger"><span class="counter" data-plugin="counterUp">8</span> Days</h3>
+					<small class="text-color">Avg. Delay Time</small>
+				</div>
+			</div>
+			<footer class="widget-footer bg-primary">
+				<small>% charge</small>
+				<span class="small-chart float-right" id="dash1-sparkline-2"></span>
+			</footer>
+		</div><!-- /.widget -->
+	</div><!-- BOX 2 -->
+
+	<div class="col-lg-3 col-sm-6">
+		<div class="widget stats-widget">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="widget-title text-primary"><span class="counter" data-plugin="counterUp">250</span>k</h3>
+					<small class="text-color">Avg. Amount Per Order</small>
+				</div>
+			</div>
+			<footer class="widget-footer bg-primary">
+				<small>% charge</small>
+				<span class="small-chart float-right" id="dash1-sparkline-3"></span>
+			</footer>
+		</div><!-- /.widget -->
+	</div><!-- BOX 3 -->
+
+	<div class="col-lg-3 col-sm-6">
+		<div class="widget stats-widget">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="widget-title text-primary"><span class="counter" data-plugin="counterUp">1.25</span>M</h3>
+					<small class="text-color">Total Ordered</small>
+				</div>
+			</div>
+			<footer class="widget-footer bg-primary">
+				<small>% charge</small>
+				<span class="small-chart float-right" id="dash1-sparkline-4"></span>
+			</footer>
+		</div><!-- /.widget -->
+	</div><!-- BOX 4 -->
+</div><!-- /.row -->
+
+<div class="widget p-4">
+	<div class="row">
+		<div class="col-md-5 col-sm-5">
+			<div>
+				<h3 class="widget-title fz-lg text-primary mb-4">Orders in 2017</h3>
+				<p class="mb-4">Here we can talk about our graph...</p>
+				<p class="font-italic">Description of the graph?</p>
+			</div>
+		</div>
+
+		<div class="col-md-7 col-sm-7">
+			<div>
+				<div id="dash1-flotchart-1" style="width: 100%; height: 230px;"></div>
+			</div>
+		</div>
+	</div><!-- /./row -->
+</div><!-- /.widget -->
+
+<div class="row">
+	<div class="col-lg-12">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title">Orders</h4>
+			</header>
+			<hr class="widget-separator"/>
+			<div class="widget-body">
+				<div class="table-responsive">
+					<table class="table no-cellborder">
+						<thead>
+							<tr><th>Order ID</th><th>Grade ID</th><th>Width</th><th>Amount</th><th>Order Date</th><th>Delay Time</th><th>Delivery Date</th><th>Price</th><th>Coffee</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class="text-primary">Buyer</td><td>Denise Ann</td><td>150</td><td>150</td><td>9:23 AM</td><td>11/9/2015</td><td>Denise Ann</td><td>Denise Ann</td><td>Denise Ann</td></tr>
+							<tr><td class="text-primary">Buyer</td><td>Denise Ann</td><td>150</td><td>150</td><td>9:23 AM</td><td>11/9/2015</td><td>Denise Ann</td><td>Denise Ann</td><td>Denise Ann</td></tr>
+							<tr><td class="text-primary">Buyer</td><td>Denise Ann</td><td>150</td><td>150</td><td>9:23 AM</td><td>11/9/2015</td><td>Denise Ann</td><td>Denise Ann</td><td>Denise Ann</td></tr>
+							<tr><td class="text-primary">Buyer</td><td>Denise Ann</td><td>150</td><td>150</td><td>9:23 AM</td><td>11/9/2015</td><td>Denise Ann</td><td>Denise Ann</td><td>Denise Ann</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+</div><!-- /.row -->
+
+<div class="row">
+	<div class="col-lg-5">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title">Qty. Ordered</h4>
+			</header>
+			<hr class="widget-separator"/>
+			<div class="widget-body">
+				<div class="table-responsive">
+					<table class="table no-cellborder">
+						<thead>
+							<tr><th>Quarter</th><th>Total</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class="text-primary">Q1</td><td>$300k</td></tr>
+							<tr><td class="text-primary">Q2</td><td>$250k</td></tr>
+							<tr><td class="text-primary">Q3</td><td>$250k</td></tr>
+							<tr><td class="text-primary">Q4</td><td>$250k</td></tr>
+							<tr><td class="text-primary">YTD</td><td>2.5M</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+
+	<div class="col-md-7">
+		<div class="widget google-chart">
+			<header class="widget-header">
+				<h4 class="widget-title">Delivery Analytics</h4>
+			</header>
+			<hr class="widget-separator"/>
+			<div class="widget-body">
+				<div id="dash1-flot-barchart" style="width: 100%; height: 220px;"></div>
+			</div>
+		</div><!-- /.widget -->
+	</div>
+</div><!-- /.row -->
+
+</div><!-- .site-content -->
+</main><!-- .site-main -->
+</div><!-- /container -->
+
+<!-- site-wide JS plugins -->
+<script src="../assets/vendor/bower_components/jquery/dist/jquery.min.js"></script>
+<script src="../assets/vendor/bower_components/tether/dist/js/tether.min.js"></script>
+<script src="src/assets/vendor/bower_components/bootstrap/dist/js/popper.min.js"></script>
+<script src="../assets/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../assets/vendor/bower_components/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="../assets/vendor/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+<script src="../assets/vendor/bower_components/sweetalert/dist/sweetalert.min.js"></script>
+<script src="../assets/vendor/bower_components/switchery/dist/switchery.min.js"></script>
+<script src="../assets/vendor/bower_components/waypoints/lib/jquery.waypoints.min.js"></script>
+<script src="../assets/vendor/bower_components/waypoints/lib/shortcuts/sticky.min.js"></script>
+<script src="../assets/vendor/bower_components/counterup/jquery.counterup.min.js"></script>
+<script src="../assets/global/js/plugins/firstlitter.js"></script>
+<script src="../assets/global/js/plugins/video-modal.js"></script>
+
+<!-- plugins for the current page -->
+<script src="../assets/vendor/flot/jquery.flot.min.js"></script>
+<script src="../assets/vendor/flot/jquery.flot.resize.min.js"></script>
+<script src="../assets/vendor/flot/jquery.flot.tooltip.min.js"></script>
+<script src="../assets/vendor/flot/jquery.flot.curvedLines.js"></script>
+<script src="../assets/vendor/flot/jquery.flot.categories.min.js"></script>
+<script src="../assets/vendor/js/echarts.min.js"></script>
+<script src="../assets/vendor/js/jquery.sparkline.min.js"></script>
+<script src="../assets/vendor/owl-carousel/owl.carousel.min.js"></script>
+
+<!-- site-wide scripts -->
+<script src="../assets/global/js/main.js"></script>
+<script src="js/site.js"></script>
+<script src="js/menubar.js"></script>
+
+<!-- current page scripts -->
+<script src="../assets/examples/js/dashboards/dashboard.v1.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* [2. Navigation / .site-navbar] */
+
+.navbar {
+	padding: 0;
+	height: $navbar-height;
+	@include media-breakpoint-up(lg) {
+		padding-left: $grid-gutter-width-base;
+		padding-right: $grid-gutter-width-base;
+	}
+
+	@include media-breakpoint-up(xl) {
+		padding-left: $menubar-width / 2;
+		padding-right: $menubar-width / 2;
+	}
+}
+
+// navbar header
+.navbar-header {
+	flex: 0 0 $menubar-width;
+	height: $navbar-height;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+
+	// responsive
+	@include media-breakpoint-down(md) {
+		flex-basis: 100%;
+		display: flex;
+		button:first-of-type {
+			margin-right: auto;
+		}
+	}
+}
+
+// navbar-brand
+.navbar-brand {
+	margin: 0;
+	display: flex;
+	align-items: center;
+		
+	> .brand-name {
+		font-weight: 500;
+	}
+	
+	> .brand-icon {
+		font-size: 1.75rem;
+	}
+	
+	> .brand-icon, > img, > svg {
+		margin-right: .5rem;
+		transition: margin-right .5s;
+	}
+
+	@include media-breakpoint-down(md) {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+// navbar-collapse
+.navbar-collapse {
+	position: relative;
+	height: $navbar-height;
+
+	@include media-breakpoint-down(md) {
+		box-shadow: 0 2px 4px rgba(0,0,0,.08);
+		padding-right: .75rem;
+		padding-left: .75rem;
+		background-color: #fff;
+	}
+}

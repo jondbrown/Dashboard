@@ -1,0 +1,212 @@
+---
+body_classes: dashboard dashboard-v2
+title: Dashboard v2
+page:
+  styles:
+    - ../assets/examples/css/dashboards/dashboard.v2.css
+  scripts:
+    - ../assets/examples/js/dashboards/dashboard.v2.js
+  css_plugins:
+    - ../assets/vendor/bower_components/jqvmap/dist/jqvmap.min.css
+  js_plugins:
+    - ../assets/vendor/flot/jquery.flot.min.js
+    - ../assets/vendor/flot/jquery.flot.resize.min.js
+    - ../assets/vendor/flot/jquery.flot.tooltip.min.js
+    - ../assets/vendor/bower_components/jqvmap/dist/jquery.vmap.min.js
+    - ../assets/vendor/bower_components/jqvmap/dist/maps/continents/jquery.vmap.asia.js
+---
+
+<div class="row">
+	<div class="col-lg-7">
+		<div class="widget">
+			<div class="widget-body">
+				<div id="dash2-flotchart-1" style="height: 320px;width: 100%;"></div>
+			</div><!-- /.widget-body -->
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+
+	<div class="col-lg-5">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title">Records</h4>
+			</header><!-- /.widget-header -->
+			<hr class="widget-separator">
+			<div class="widget-body d-flex">
+				<div class="text-center py-3 flex-grow-1 border-r-2">
+					<h2 class="m-0" data-plugin="counterUp">26</h2>
+				</div>
+				<div class="text-center py-3 flex-grow-1 border-r-2">
+					<h2 class="m-0" data-plugin="counterUp">75</h2>
+				</div>
+				<div class="text-center py-3 flex-grow-1">
+					<h2 class="m-0" data-plugin="counterUp">32</h2>
+				</div>
+			</div><!-- /.widget-body -->
+		</div><!-- /.widget -->
+
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title">Connect Point</h4>
+			</header><!-- /.widget-header -->
+			<hr class="widget-separator">
+			<div class="widget-body">
+				<div class="media">
+					<div class="circle m-0 mr-3 border-a-0 bg-primary text-white" style="width: 90px; height: 90px; line-height: 90px;">
+						<i class="fa fa-2x fa-internet-explorer"></i>
+					</div>
+					<div class="media-body pb-3 pt-1">
+						<p class="m-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quaerat repellendus est, voluptate cupiditate, iusto!</p>
+					</div>
+				</div><!-- /.media -->
+			</div><!-- /.widget-body -->
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+</div><!-- /.row -->
+
+<div class="row">
+	<div class="col-md-6 col-sm-6">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title">Streams</h4>
+			</header>
+			<hr class="widget-separator"/>
+			<div class="widget-body">
+				<div class="streamline ml-4">
+					<div class="sl-item pb-3">
+						<div class="sl-avatar avatar avatar-circle">
+							<img class="img-fluid" src="../assets/global/images/221.jpg" alt="avatar"/>
+						</div><!-- /.avatar -->
+						<div class="sl-content ml-5">
+							<h6 class="m-t-0"><a href="javascript:void(0)" class="mr-1 theme-color">John Doe</a><small class="text-muted fz-sm">last month</small></h6>
+							<p>John has just started working on the project</p>
+						</div>
+					</div><!-- /.sl-item -->
+
+					<div class="sl-item pb-3">
+						<div class="sl-avatar avatar avatar-circle">
+							<img class="img-fluid" src="../assets/global/images/214.jpg" alt="avatar"/>
+						</div><!-- /.avatar -->
+						<div class="sl-content ml-5">
+							<h6 class="m-t-0"><a href="javascript:void(0)" class="mr-1 theme-color">Jane Doe</a><small class="text-muted fz-sm">last month</small></h6>
+							<p>Jane sent you invitation to attend the party</p>
+						</div>
+					</div><!-- /.sl-item -->
+
+					<div class="sl-item pb-3">
+						<div class="sl-avatar avatar avatar-circle">
+							<img class="img-fluid" src="../assets/global/images/217.jpg" alt="avatar"/>
+						</div><!-- /.avatar -->
+						<div class="sl-content ml-5">
+							<h6 class="m-t-0"><a href="javascript:void(0)" class="mr-1 theme-color">Sally Mala</a><small class="text-muted fz-sm">last month</small></h6>
+							<p>Sally added you to her circles</p>
+						</div>
+					</div><!-- /.sl-item -->
+
+					<div class="sl-item pb-3">
+						<div class="sl-avatar avatar avatar-circle">
+							<img class="img-fluid" src="../assets/global/images/211.jpg" alt="avatar"/>
+						</div><!-- /.avatar -->
+						<div class="sl-content ml-5">
+							<h6 class="m-t-0"><a href="javascript:void(0)" class="mr-1 theme-color">Sara Adams</a><small class="text-muted fz-sm">last month</small></h6>
+							<p>Sara has finished her task</p>
+						</div>
+					</div><!-- /.sl-item -->
+					<div class="sl-item pb-3">
+						<div class="sl-avatar avatar avatar-circle">
+							<img class="img-fluid" src="../assets/global/images/214.jpg" alt="avatar"/>
+						</div><!-- /.avatar -->
+						<div class="sl-content ml-5">
+							<h6 class="m-t-0"><a href="javascript:void(0)" class="mr-1 theme-color">Sandy Doe</a><small class="text-muted fz-sm">last month</small></h6>
+							<p>Sara has finished her task</p>
+						</div>
+					</div><!-- /.sl-item -->
+				</div><!-- /.streamline -->
+			</div><!-- /.widget-body -->
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+
+	<div class="col-md-6 col-sm-6">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title">Africa Map</h4>
+			</header><!-- /.widget-header -->
+			<hr class="widget-separator">
+			<div class="widget-body">
+				<div id="dash2-vmap-1" style="width: 100%; height: 330px;"></div>
+			</div><!-- /.widget-body -->
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+</div><!-- /.row-->
+
+<div class="widget mb-0">
+	<header class="widget-header">
+		<h4 class="widget-title">Service Orders</h4>
+	</header>
+	<hr class="widget-separator"/>
+	<div class="widget-body">
+		<div class="table-responsive">							
+			<table class="table no-cellborder">
+				<thead>
+					<tr>
+						<th>Service Name</th>
+						<th>Customer Name</th>
+						<th>Priority</th>
+						<th>Total Cost</th>
+						<th>Current Stage</th>
+						<th>Delivery Date</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td class="text-info">Firm Website</td>
+						<td>John Doe</td>
+						<td>High</td>
+						<td>120$</td>
+						<td><span class="badge badge-info">Initiation</span></td>
+						<td>06/03/2016</td>
+					</tr>
+					<tr>
+						<td class="text-success">Security Test</td>
+						<td>Jane Doe</td>
+						<td>High</td>
+						<td>2500$</td>
+						<td><span class="badge badge-success">System Analysis</span></td>
+						<td>05/15/2016</td>
+					</tr>
+					<tr>
+						<td class="text-warning">Branches Linking</td>
+						<td>Diana Aid</td>
+						<td>Normal</td>
+						<td>1500$</td>
+						<td><span class="badge badge-warning">System Design</span></td>
+						<td>05/26/2016</td>
+					</tr>
+					<tr>
+						<td class="text-info">Resources Optimization</td>
+						<td>Sara Adams</td>
+						<td>Low</td>
+						<td>1300$</td>
+						<td><span class="badge badge-info">Specification</span></td>
+						<td>06/02/2016</td>
+					</tr>
+					<tr>
+						<td class="text-primary">Office Automation</td>
+						<td>Ibrahim Ali</td>
+						<td>Normal</td>
+						<td>7200$</td>
+						<td><span class="badge badge-primary">Implementation</span></td>
+						<td>06/13/2016</td>
+					</tr>
+					<tr>
+						<td class="text-danger">System Recovery</td>
+						<td>Smith Adams</td>
+						<td>Normal</td>
+						<td>1000$</td>
+						<td><span class="badge badge-danger">Maintenance</span></td>
+						<td>06/02/2016</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div><!-- /.widget -->

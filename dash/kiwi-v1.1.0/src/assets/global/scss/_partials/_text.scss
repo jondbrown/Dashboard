@@ -1,0 +1,116 @@
+/* Text variants */
+.text-color {
+	color: $text-color !important;
+}
+
+.title-color {
+	color: $title-color !important;
+}
+
+.watermark {
+	color: $watermark !important;
+}
+
+.text-muted {
+	color: inherit; opacity: .6 !important;
+}
+
+.text-white {
+  color: white !important;
+}
+
+.text-gray {
+  color: #aaa !important;
+}
+
+.text-inverse {
+  color: $brand-inverse !important;
+}
+
+.text-black {
+  color: $brand-black !important;
+}
+
+.text-red {
+  color: $red-500 !important;
+}
+
+.text-pink {
+  color: $pink-500 !important;
+}
+
+.text-purple {
+  color: $purple-500 !important;
+}
+
+.text-indigo {
+  color: $indigo-500 !important;
+}
+
+.text-blue {
+  color: $blue-500 !important;
+}
+
+.text-cyan {
+  color: $cyan-500 !important;
+}
+
+.text-teal {
+  color: $teal-500 !important;
+}
+
+.text-green {
+  color: $green-500 !important;
+}
+
+.text-yellow {
+  color: $yellow-500 !important;
+}
+
+.text-orange {
+  color: $orange-500 !important;
+}
+
+.text-brown {
+  color: $brown-500 !important;
+}
+
+.text-facebook,
+.text-hv-facebook:hover {
+  color: $brand-facebook !important;
+}
+
+.text-twitter,
+.text-hv-twitter:hover {
+  color: $brand-twitter !important;
+}
+
+.text-google-plus,
+.text-hv-google-plus:hover {
+  color: $brand-google-plus !important;
+}
+
+.text-youtube,
+.text-hv-youtube:hover {
+  color: $brand-youtube !important;
+}
+
+.text-dribbble,
+.text-hv-dribbble:hover {
+  color: $brand-dribbble !important;
+}
+
+.text-flickr,
+.text-hv-flickr:hover {
+  color: $brand-flickr !important;
+}
+
+.text-linkedin,
+.text-hv-linkedin:hover {
+  color: $brand-linkedin !important;
+}
+
+.text-tumblr,
+.text-hv-tumblr:hover {
+  color: $brand-tumblr !important;
+}

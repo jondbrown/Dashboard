@@ -1,0 +1,141 @@
+@import '../base';
+
+.profile-header-cover {
+	background: #fff;
+	padding: 64px 16px;
+}
+
+.profile-header-bottom {
+	display: flex;
+	justify-content: center;
+	background: $bg-faded;
+	border-top: 1px solid $border-color-default;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	> div {
+		padding: 1.5rem 3rem;
+		text-align: center;
+		&:nth-child(2) {
+			border-right: 1px solid $border-color-default;
+			border-left: 1px solid $border-color-default;
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		flex-wrap: wrap;
+		> div {
+			flex: 1 1 50%;
+			&:nth-child(2) {
+				border-right: none;
+				border-left: none;
+			}
+			&:last-child {
+				border-top: 1px solid $border-color-default;
+			}
+		}
+	}
+}
+
+.status-editor {
+	.status-content {
+		display: block;
+		width: 100%;
+		height: 120px;
+		padding: 16px;
+		border: none;
+		resize: none;
+		box-shadow: none;
+		outline: none;
+	}
+
+	.status-editor-footer {
+		display: flex;
+		justify-content: space-between;
+		padding: .75rem 1rem;
+		background: $bg-faded;
+		border-top: 1px solid $border-color-default;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	}
+}
+
+.profile-content {
+	padding: 1.5rem;
+	@include media-breakpoint-up(lg) {
+		body.menubar-top & {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
+
+.profile-main {
+	background-color: #fff;
+	box-shadow: 0 1px 2px #ccc;
+}
+
+.navigation-widget {
+	.list-group-item{
+		padding: 1rem;
+		border: none;
+	}
+}
+
+#profile-nav-tabs {
+	.nav-link {
+		padding: 1.25rem 1.5rem;
+		border-radius: 0;
+	}
+
+	.nav-link:hover,
+	.nav-link:focus {
+		border: none;
+		border-bottom: 2px solid #ccc;
+	}
+
+	.nav-link.active,
+	.nav-item.show .nav-link {
+		background-color: #fff;
+		border: none;
+		color: $brand-primary;
+		font-weight: bold;
+		border-bottom: 2px solid $brand-primary;
+	}
+}
+
+#profile-stream {
+	.stream-post {
+		padding: 24px 16px;
+		border-bottom: 1px solid $border-color-default;
+	}
+	.sp-content {
+		margin-top: 1.5rem;
+		p {
+			font-size: 1rem;
+			line-height: 1.8;
+		}
+	}
+
+	.sp-image {
+		max-width: 250px;
+		height: auto;
+		margin-right: 24px;
+		border-radius: 6px;
+		display: inline-block;
+		float: left;
+	}
+}
+
+.profile-aside-gallery {
+	.row {
+		margin-left: -.25rem;
+		margin-right: -.25rem;
+	}
+
+	[class*="col-"] {
+		padding-left: .25rem;
+		padding-right: .25rem;
+	}
+
+	.g__item {
+		margin-bottom: .5rem;
+	}
+}

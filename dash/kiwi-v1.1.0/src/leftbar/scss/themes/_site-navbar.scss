@@ -1,0 +1,110 @@
+/* [12. Navbar theme] */
+.site-navbar {
+	.navbar-collapse {
+		background-color: #FFF;
+	}
+	
+	.hamburger {
+		background: none;
+		.hamburger-inner,
+		.hamburger-inner::after,
+		.hamburger-inner::before {
+			background-color: $text-color;
+		}
+	}
+	
+	@include media-breakpoint-up(md) {
+		.navbar-collapse {
+			border-bottom: 1px solid darken(#fff, 10%);
+		}
+
+		.navbar-nav {
+			.nav-link {
+				@include hover-focus {
+					background-color: rgba(darken(#fff, 5%), .5);
+				}
+			}
+
+			.page-title {
+				color: $text-color;
+			}
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		border-bottom: none !important;
+		.navbar-collapse {
+			background-color: #fff;
+		}
+	}
+}
+
+// Light links against a dark background
+.site-navbar.navbar-inverse {
+	.navbar-collapse {
+		background-color: transparent;
+		border-bottom: none;
+	}
+	
+	.hamburger {
+		background: none;
+		.hamburger-inner,
+		.hamburger-inner::after,
+		.hamburger-inner::before {
+			background-color: #fff;
+		}
+	}
+
+	@include media-breakpoint-up(md) {
+		.navbar-nav {
+			.page-title {
+				color: rgba(#fff, .7);
+			}
+
+			.nav-link {
+				color: rgba(#fff, .7);
+				font-weight: 400;
+				@include hover-focus {
+					color: #fff;
+					background-color: rgba(0,0,0,.05);
+				}
+			}
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		.navbar-collapse {
+			background-color: #fff;
+		}
+
+		.navbar-nav {
+			.nav-link {
+				color: $text-color;
+				@include hover-focus {
+					background-color: rgba(darken(#fff, 5%), .5);
+					color: rgba(0, 0, 0, 0.7);
+				}
+			}
+		}
+	}
+}
+
+.navbar-header {
+	background-color: rgba(0,0,0,.05);
+	
+	.hamburger {
+		background: none;
+		.hamburger-inner,
+		.hamburger-inner::after,
+		.hamburger-inner::before {
+			background-color: #fff;
+		}
+	}
+
+	.navbar-brand {
+		&,
+		&:hover {
+			color: #fff;
+		}
+	}
+}

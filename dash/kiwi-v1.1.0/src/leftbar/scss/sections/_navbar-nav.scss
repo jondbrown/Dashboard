@@ -1,0 +1,57 @@
+/* [11. Navigation / .navbar-nav] */
+.navbar-nav {
+	.nav-link {
+		display: flex;
+		position: relative;
+		align-items: center;
+		height: $navbar-height;
+		padding-left: 1rem !important;
+		padding-right: 1rem !important;
+	}
+	
+	@include media-breakpoint-down(xs) {
+		.nav-item {
+			position: static;
+			border: none; 
+		}
+	}
+
+	@include media-breakpoint-down(sm) {
+		.navbar-toggleable-sm & {
+			flex-direction: row;
+			justify-content: flex-end;
+			.dropdown-menu {
+				position: absolute;
+				border-radius: 0;
+				margin-top: 0;
+				width: 100%;
+				top: 100%;
+			}
+		}
+	} // end media query
+
+	.dropdown-toggle::after {
+		display: none;
+	}
+
+	.dropdown-menu {
+		font-size: $font-size-sm;
+		margin-top: 2px;
+		min-width: 240px;
+	}
+
+	.dropdown-menu.float-right {
+		right: 0;
+		left: auto;
+	}
+}
+
+.navbar-toggler {
+	@include reset-input;
+	height: $navbar-height;
+	padding: 0 .75rem;
+	font-size: 1rem;
+	background: none;
+	cursor: pointer;
+	&:focus { outline: none; }
+}

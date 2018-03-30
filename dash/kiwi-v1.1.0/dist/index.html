@@ -1,0 +1,68 @@
+<!DOCTYPE html><html lang="en" id="home"><head><title>Kiwi - Bootstrap Admin Template</title><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0,minimal-ui"><meta name="description" content="Admin, Dashboard, Bootstrap"><link rel="shortcut icon" sizes="196x196" href="assets/global/images/logo.png"><link rel="stylesheet" href="assets/vendor/css/bootstrap.css"><link rel="stylesheet" href="assets/vendor/bower_components/font-awesome/css/font-awesome.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900,300"><style>.header{ padding: 100px 0; }
+		.brand {
+			font-size: 48px;
+			text-decoration: none;
+			margin-bottom: 1rem;
+			display: block;
+		}
+		.brand:hover,
+		.brand:focus,
+		.brand:active {
+			text-decoration: none;
+		}
+
+		.showcase{ padding: 100px 0; background: #eceff1; }
+		.demo-item{ padding: 0 15px; margin-bottom: 2.5rem; }
+		
+		@media (max-width: 992px) {
+			.showcase .container {
+				width: 96%;
+			}	
+		}
+
+		.demo-img{
+			background: #fff;
+			box-shadow: 0 5px 10px #ccc;
+			padding: 12px;
+			display: block;
+			border-radius: 6px;
+			-webkit-transition: all .5s ease;
+			transition: all .5s ease;
+		}
+		.demo-img:hover{ box-shadow: 0 10px 15px #ccc; -webkit-transform: scale(1.05); transform: scale(1.05); }
+		@media (max-width: 480px){ .demo-item{ padding: 0 30px; } }
+
+		.footer{ margin-top: 80px; padding-bottom: 40px; }
+		.copyright{ letter-spacing: 1px; }
+
+		.landing-page-banner{ display: block; box-shadow: 0 5px 10px #ccc; -webkit-transition: all .5s ease; transition: all .5s ease; }
+		.landing-page-banner:hover{ box-shadow: 0 10px 15px #ccc; }
+		
+		#loading-div {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 1;
+			z-index: 9999;
+			-webkit-transition: opacity 3s;
+			transition: opacity 3s;
+			background-color: #f3f3f3;
+		}
+		#loading-div img {
+			display: block;
+			position: absolute;
+			top: calc(50% - 25px);
+			left: calc(50% - 25px);
+		}
+		.bg-white {
+			background-color: #fff;
+		}
+		body{ height: 100%; overflow-y: hidden; }
+		body.loading-done{ overflow-y: auto; }
+		body .wrapper { opacity: 0; -webkit-transition: opacity .75s; transition: opacity .75s; }
+		body.loading-done .wrapper { opacity: 1; }
+		body.loading-done #loading-div { opacity: 0; visibility: hidden; }</style></head><body><div class="wrapper"><header class="header bg-white"><div class="container"><div class="text-center"><a href="index.html" class="brand"><i class="fa fa-houzz"></i> <span>Kiwi</span></a><p>Responsive Bootstrap Admin Template</p><p class="m-t-xl m-b-0"><a href="https://themeforest.net/item/infinity-responsive-web-app-kit/16230780" class="btn btn-primary fz-base">Download Now</a></p></div></div></header><div class="showcase"><div class="container"><div class="row"><div class="col-md-4"><div class="demo-item"><a href="leftbar/index.html" target="_blanck" class="demo-img bg-white"><img class="img-fluid" src="assets/index/images/demo-leftbar-1.png" alt="demo 1"></a><h5 class="text-center mt-4 mb-0">Leftbar Demo 1</h5></div></div><!-- END column --><div class="col-md-4"><div class="demo-item"><a href="leftbar/dashboard.v2.html" target="_blanck" class="demo-img bg-white"><img class="img-fluid" src="assets/index/images/demo-leftbar-2.png" alt="demo 2"></a><h5 class="text-center mt-4 mb-0">Leftbar Demo 2</h5></div></div><!-- END column --><div class="col-md-4"><div class="demo-item"><a href="leftbar/dashboard.v3.html" target="_blanck" class="demo-img bg-white"><img class="img-fluid" src="assets/index/images/demo-leftbar-3.png" alt="demo 3"></a><h5 class="text-center mt-4 mb-0">Leftbar Demo 3</h5></div></div><!-- END column --></div><!-- .row --><div class="row"><div class="col-md-4"><div class="demo-item"><a href="topbar/index.html" target="_blanck" class="demo-img bg-white"><img class="img-fluid" src="assets/index/images/demo-topbar-1.png" alt="demo 1"></a><h5 class="text-center mt-4 mb-0">Topbar Demo 1</h5></div></div><!-- END column --><div class="col-md-4"><div class="demo-item"><a href="topbar/dashboard.v2.html" target="_blanck" class="demo-img bg-white"><img class="img-fluid" src="assets/index/images/demo-topbar-2.png" alt="demo 2"></a><h5 class="text-center mt-4 mb-0">Topbar Demo 2</h5></div></div><!-- END column --><div class="col-md-4"><div class="demo-item"><a href="topbar/dashboard.v3.html" target="_blanck" class="demo-img bg-white"><img class="img-fluid" src="assets/index/images/demo-topbar-3.png" alt="demo 3"></a><h5 class="text-center mt-4 mb-0">Topbar Demo 3</h5></div></div><!-- END column --></div><!-- .row --></div><!-- .container --></div><!-- .showcase --><footer class="footer"><p class="copyright text-center"><em>Copyright &copy; 2017 <a href="http://spantags.com/" class="fw-500 text-color">spantags</a></em></p></footer></div><!-- .wrapper --><div id="loading-div"><img src="assets/global/images/landing-page/puff.svg" width="50" alt=""></div><script>window.onload = function(){
+			document.body.classList.add('loading-done');
+		};</script></body></html>

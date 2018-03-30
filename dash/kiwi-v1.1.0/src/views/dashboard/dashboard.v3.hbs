@@ -1,0 +1,248 @@
+---
+body_classes: dashboard dashboard-v3
+title: Dashboard v3
+page:
+  styles:
+    - ../assets/examples/css/dashboards/dashboard.v3.css
+  scripts:
+    - ../assets/examples/js/dashboards/dashboard.v3.js
+  js_plugins:
+    - ../assets/vendor/js/echarts.min.js
+    - ../assets/vendor/js/jquery.sparkline.min.js
+---
+
+<div class="row">
+	<div class="col-lg-4">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title mr-auto">Sales before taxes</h4>
+				<small class="text-muted">10-30-2016</small>
+			</header><!-- /.widget-header -->
+			<hr class="widget-separator">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="text-color mb-4 font-weight-bold fz-lg">$ <span data-plugin="counterUp">1,002.79</span></h3>
+					<div class="text-primary">
+						<i class="fa fa-long-arrow-up mr-1"></i>
+						<sapn>33% from the last week</sapn>
+					</div>
+				</div>
+				<div class="float-right">
+					<div class="mt-3" id="dash3-sparkline-1"></div>
+				</div>
+			</div><!-- /.widget-body -->
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+	
+	<div class="col-lg-4">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title mr-auto">Your balance</h4>
+				<small class="text-muted">10-30-2016</small>
+			</header><!-- /.widget-header -->
+			<hr class="widget-separator">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="text-color mb-4 font-weight-bold fz-lg">$ <span data-plugin="counterUp">9,542.20</span></h3>
+					<div class="text-danger">
+						<i class="fa fa-long-arrow-down mr-1"></i>
+						<sapn>43% from the last week</sapn>
+					</div>
+				</div>
+				<div class="float-right">
+					<div class="mt-3" id="dash3-sparkline-2"></div>
+				</div>
+			</div><!-- /.widget-body -->
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+	
+	<div class="col-lg-4">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title mr-auto">Total value</h4>
+				<small class="text-muted">10-30-2016</small>
+			</header><!-- /.widget-header -->
+			<hr class="widget-separator">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="text-color mb-4 font-weight-bold fz-lg">$<span data-plugin="counterUp">11,002.79</span></h3>
+					<div class="text-primary">
+						<i class="fa fa-long-arrow-up mr-1"></i>
+						<sapn>33% from the last week</sapn>
+					</div>
+				</div>
+				<div class="float-right">
+					<div class="mt-3" id="dash3-sparkline-3"></div>
+				</div>
+			</div><!-- /.widget-body -->
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+</div><!-- /.row -->
+
+<div class="row">
+	<div class="col-lg-8">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title mr-auto">Sales</h4>
+				<div class="float-right">
+					<a href="#" class="text-info">All time</a> /
+					<a href="#" class="text-muted">2016</a> /
+					<a href="#" class="text-info">June</a>
+				</div>
+			</header><!-- /.widget-header -->
+			<hr class="widget-separator">
+			<div class="widget-body p-0">
+				<div id="dash3-echart-1" style="height: 380px;"></div>
+			</div><!-- /.widget-body -->
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+
+	<div class="col-lg-4">
+		<div class="widget" id="countries-widget">
+			<header class="widget-header">
+				<h4 class="widget-title">Top countries</h4>
+			</header><!-- /.widget-header -->
+			<hr class="widget-separator">
+			<div class="widget-body">
+				<div class="list-group m-0">
+					<a href="#" class="list-group-item">
+						<div class="avatar avatar-circle">
+							<img src="../assets/global/images/flags/Egypt.png" alt="">
+						</div>
+						<div class="fz-base">Egypt</div>
+						<div class="ml-auto">$<span data-plugin="counterUp">64258</span></div>
+					</a><!-- /.list-group-item -->
+					<a href="#" class="list-group-item">
+						<div class="avatar avatar-circle">
+							<img src="../assets/global/images/flags/Italy.png" alt="">
+						</div>
+						<div class="fz-base">Italy</div>
+						<div class="ml-auto">$<span data-plugin="counterUp">55825</span></div>
+					</a><!-- /.list-group-item -->
+					<a href="#" class="list-group-item">
+						<div class="avatar avatar-circle">
+							<img src="../assets/global/images/flags/United-States-of-America.png" alt="">
+						</div>
+						<div class="fz-base">USA</div>
+						<div class="ml-auto">$<span data-plugin="counterUp">4587</span></div>
+					</a><!-- /.list-group-item -->
+					<a href="#" class="list-group-item">
+						<div class="avatar avatar-circle">
+							<img src="../assets/global/images/flags/China.png" alt="">
+						</div>
+						<div class="fz-base">China</div>
+						<div class="ml-auto">$<span data-plugin="counterUp">4465</span></div>
+					</a><!-- /.list-group-item -->
+					<a href="#" class="list-group-item">
+						<div class="avatar avatar-circle">
+							<img src="../assets/global/images/flags/Russia.png" alt="">
+						</div>
+						<div class="fz-base">Russia</div>
+						<div class="ml-auto">$<span data-plugin="counterUp">3300</span></div>
+					</a><!-- /.list-group-item -->
+					<a href="#" class="list-group-item">
+						<div class="avatar avatar-circle">
+							<img src="../assets/global/images/flags/France.png" alt="">
+						</div>
+						<div class="fz-base">France</div>
+						<div class="ml-auto">$<span data-plugin="counterUp">350</span></div>
+					</a><!-- /.list-group-item -->
+				</div><!-- /.list-group -->
+			</div><!-- /.widget-body -->
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+</div><!-- /.row -->
+
+<div class="widget">
+	<header class="widget-header">
+		<h4 class="widget-title">Items sales this month</h4>
+	</header><!-- /.widget-header -->
+	<hr class="widget-separator">
+	<div class="widget-body">
+		<table class="table table-striped">
+			<tr><th>Date</th><th>Items sales count</th><th>Earnings</th></tr>
+			<tr>
+				<td>03-26-2016</td>
+				<td>262</td>
+				<td>$691</td>
+			</tr>
+			<tr>
+				<td>06-25-2016</td>
+				<td>500</td>
+				<td>$1765</td>
+			</tr>
+			<tr>
+				<td>06-25-2016</td>
+				<td>214</td>
+				<td>$6258</td>
+			</tr>
+			<tr>
+				<td>05-14-2016</td>
+				<td>258</td>
+				<td>$1400</td>
+			</tr>
+			<tr>
+				<td>03-25-2016</td>
+				<td>158</td>
+				<td>$8457</td>
+			</tr>
+			<tr>
+				<td>08-14-2016</td>
+				<td>741</td>
+				<td>$2543</td>
+			</tr>
+			<tr>
+				<td>07-25-2016</td>
+				<td>158</td>
+				<td>$5869</td>
+			</tr>
+		</table>
+	</div><!-- /.widget-body -->
+</div><!-- /.widget -->
+
+<div class="widget mb-0" id="products-widget">
+	<header class="widget-header">
+		<h4 class="widget-title">Top items this month</h4>
+	</header><!-- /.widget-header -->
+	<hr class="widget-separator">
+	<div class="widget-body">
+		<div class="row">
+			<div class="col-sm-6 col-md-3">
+				<a href="javascript:void(0)" class="product">
+					<img class="img-fluid" src="../assets/global/images/product-1.jpg" alt="oroduct image">
+					<div class="product-caption">
+						<span>147 Sales</span>
+						<span class="ml-auto">$450</span>
+					</div><!-- /.product-caption -->
+				</a><!-- /.product -->
+			</div><!-- /.col -->
+			<div class="col-sm-6 col-md-3">
+				<a href="javascript:void(0)" class="product">
+					<img class="img-fluid" src="../assets/global/images/product-2.jpg" alt="oroduct image">
+					<div class="product-caption">
+						<span>147 Sales</span>
+						<span class="ml-auto">$450</span>
+					</div><!-- /.product-caption -->
+				</a><!-- /.product -->
+			</div><!-- /.col -->
+			<div class="col-sm-6 col-md-3">
+				<a href="javascript:void(0)" class="product">
+					<img class="img-fluid" src="../assets/global/images/product-3.jpg" alt="oroduct image">
+					<div class="product-caption">
+						<span>147 Sales</span>
+						<span class="ml-auto">$450</span>
+					</div><!-- /.product-caption -->
+				</a><!-- /.product -->
+			</div><!-- /.col -->
+			<div class="col-sm-6 col-md-3">
+				<a href="javascript:void(0)" class="product">
+					<img class="img-fluid" src="../assets/global/images/product-4.jpg" alt="oroduct image">
+					<div class="product-caption">
+						<span>147 Sales</span>
+						<span class="ml-auto">$450</span>
+					</div><!-- /.product-caption -->
+				</a><!-- /.product -->
+			</div><!-- /.col -->
+		</div><!-- /.row -->
+	</div><!-- /.widget-body -->
+</div><!-- /.widget -->

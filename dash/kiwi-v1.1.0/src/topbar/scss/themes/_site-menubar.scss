@@ -1,0 +1,94 @@
+/* [12. Menubar theme] */
+.site-menubar {
+	background: #fff;
+	box-shadow: 2px 2px 4px rgba(0,0,0,.08);
+}
+
+.site-user {
+	.username,
+	.usertitle {
+		color: #555;
+	}
+	@include media-breakpoint-down(md) {
+		border-bottom: 1px solid $border-color-default;
+	}
+}
+
+.site-menu {
+	li.menu-section-heading {
+		color: #555;
+	}
+
+	li a {
+		color: #555;
+	}
+
+	.menu-icon {
+		color: lighten(#555, 10%);
+	}
+}
+
+body.menubar-left .site-menu {
+	li.open,
+	li:hover {
+		background-color: rgba(darken(#fff, 5%), .5);
+	}
+}
+
+body.menubar-top .site-menu {
+	li:hover {
+		background-color: rgba(darken(#fff, 5%), .5);
+	}
+	
+	> li:hover,
+	li:hover > .submenu {
+		background: darken(#fff, 2%);
+	}
+
+	.submenu {
+		box-shadow: 2px 2px 4px rgba(0,0,0,.08);
+	}
+}
+
+body.menubar-inverse {
+	.site-menubar {
+		background: $brand-inverse;
+	}
+
+	.site-user {
+		.username,
+		.usertitle {
+			color: rgba(255,255,255, .7);
+		}
+		@include media-breakpoint-down(md) {
+			border-bottom: 1px solid lighten($brand-inverse, 3%);
+		}
+	}
+
+	.site-menu {
+		li a {
+			color: rgba(255,255,255, .7);
+		}
+
+		.menu-icon {
+			color: rgba(255,255,255, .7);
+		}
+	}
+
+	&.menubar-left .site-menu {
+		li.open,
+		li:hover {
+			background-color: rgba(darken($brand-inverse, 5%), .5);
+		}
+	}
+
+	&.menubar-top .site-menu {
+		li:hover {
+			background-color: rgba(darken($brand-inverse, 5%), .5);
+		}
+		> li:hover,
+		li:hover > .submenu {
+			background: darken($brand-inverse, 2%);
+		}
+	}
+}

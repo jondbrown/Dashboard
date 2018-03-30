@@ -1,0 +1,92 @@
+/* Utility Classes */
+.theme-color {
+	color: $brand-primary;
+}
+
+
+.flex-grow-1 {
+	flex-grow: 1;
+}
+
+// Position
+
+.pos-s {
+	position: static !important;
+}
+
+.pos-r {
+	position: relative !important;
+}
+
+.badge {
+	font-size: 10px;
+	font-weight: 500;
+}
+
+.badge-circle {
+	border-radius: 50%;
+}
+
+// border-radius
+.border-radius-0 {
+	border-radius: 0 !important;
+}
+
+.border-radius-1 {
+	border-radius: $border-radius !important;
+}
+
+// Font Size
+.fz-base {
+	font-size: $font-size-base !important;
+}
+
+.fz-xs {
+	font-size: $font-size-xs !important;
+}
+
+.fz-sm {
+	font-size: $font-size-sm !important;
+}
+
+.fz-lg {
+	font-size: $font-size-lg !important;
+}
+
+
+// line-height
+.lh-2 {
+	line-height: 1.8 !important;
+}
+
+// font-weight property
+.font-weight-200 {
+	font-weight: 200 !important;
+}
+
+.font-weight-light {
+	font-weight: 300 !important;
+}
+
+// Display
+.d-table {
+	display: table !important;
+
+	& > * {
+		display: table-cell !important;
+	}
+}
+
+// Images
+.img-full {
+	width: 100% !important;
+	height: auto;
+	display: block;
+}
+
+// Modals
+.modal-md {
+	@media(min-width: map-get($grid-breakpoints, md)) {
+		max-width: 700px;
+	}
+}

@@ -1,0 +1,36 @@
+@import 'base';
+
+.contact-card {
+	position: relative;
+	padding: .75rem 1rem;
+	border: 1px solid $card-border-color;
+	border-radius: $border-radius;
+	background-color: $bg-faded;
+	&:hover {
+		.contact-actions{
+			display: block;
+			opacity: 1;
+		}
+	}
+
+	.contact-links {
+		a {
+			color: $text-color;
+			&:hover{
+				color: $brand-info;
+			}
+		}
+	}
+}
+
+.contact-actions {
+	position: absolute;
+	display: none;
+	opacity: 0;
+	transition: opacity .5s ease;
+	top: 20px;
+	right: 20px;
+	.btn{
+		padding: 4px 8px;
+	}
+}

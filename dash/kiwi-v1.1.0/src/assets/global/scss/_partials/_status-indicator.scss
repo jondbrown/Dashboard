@@ -1,0 +1,16 @@
+/* Status component */
+.status {
+	width: 12px;
+	height: 12px;
+	display: inline-block;
+	border-radius: 100%;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	border: 2px solid #fff;
+}
+
+@include status-variant('online', $brand-success);
+@include status-variant('away', $brand-warning);
+@include status-variant('busy', $brand-danger);
+@include status-variant('offline', $gray-lighter);

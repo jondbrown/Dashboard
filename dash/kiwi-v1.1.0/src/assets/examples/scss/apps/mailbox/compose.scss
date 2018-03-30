@@ -1,0 +1,14 @@
+@import '../base';
+
+.compose-editor {
+	border-radius: $border-radius;
+	background-color: #FFF;
+}
+
+.compose-editor-footer {
+	display: flex;
+	justify-content: flex-end;
+	padding: .75rem 1rem;
+	background-color: $bg-faded;
+	border-top: 1px solid $border-color-default;
+}

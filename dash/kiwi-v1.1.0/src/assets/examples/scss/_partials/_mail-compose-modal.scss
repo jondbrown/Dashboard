@@ -1,0 +1,21 @@
+#composeModal {
+	.form-group{
+		margin-bottom: $margin-md;
+	}
+
+	input.form-control {
+		border: none;
+		box-shadow: none;
+		outline: none;
+		border-bottom: 1px solid #eee;
+	}
+	textarea {
+		border-radius: 0;
+		box-shadow: none;
+		border: 1px solid #eee;
+		resize: none;
+	}
+	.modal-footer {
+		background-color: $bg-faded;
+	}
+}

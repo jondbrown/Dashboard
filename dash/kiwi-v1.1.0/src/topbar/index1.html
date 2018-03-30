@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Dashboard | Team Not Really</title>
+	{% load staticfiles %}
+	<meta name="description" content="Kiwi is a premium adman dashboard template based on bootstrap">
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+	<link rel="apple-touch-icon" href="{% static 'apple-touch-icon.png' %}">
+
+	<!-- core plugins -->
+
+	<link rel="stylesheet" href="{% static '/assets/vendor/css/hamburgers.css' %}">
+	<link rel="stylesheet" href="{% static '/assets/vendor/bower_components/animate.css/animate.min.css' %}">
+	<link rel="stylesheet" href="{% static '/assets/vendor/bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css' %}">
+	<link rel="stylesheet" href="{% static '/assets/vendor/bower_components/switchery/dist/switchery.min.css' %}">
+	<link rel="stylesheet" href="{% static '/assets/vendor/bower_components/sweetalert/dist/sweetalert.css' %}">
+	<!-- Site-wide styles -->
+	<link rel="stylesheet" href="{% static '/assets/vendor/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="{% static '/topbar/css/site.css' %}">
+
+	<!-- plugins for the current page -->
+	<link rel="stylesheet" href="{% static '/assets/vendor/owl-carousel/owl.carousel.css' %}">
+
+	<!-- current page styles -->
+	<link rel="stylesheet" href="{% static '/assets/examples/css/dashboards/dashboard.v1.css' %}">
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="{% static '/assets/vendor/bower_components/font-awesome/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="{% static '/assets/vendor/bower_components/material-design-iconic-font/dist/css/material-design-iconic-font.css' %}">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600">
+
+	<script src="{% static '/assets/vendor/bower_components/breakpoints.js/dist/breakpoints.min.js' %}"></script>
+	<script>
+		Breakpoints({xs: {min:0,max:575},sm: {min:576,max:767},md: {min:768,max:991},lg: {min:992,max:1199},xl: {min:1200,max:Infinity}});
+	</script>
+</head>
+<body class="menubar-top menubar-light dashboard dashboard-v1">
+	<!--[if lt IE 10]>
+	  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+	<![endif]-->
+	<nav class="site-navbar navbar fixed-top navbar-toggleable-md navbar-inverse bg-indigo-500">
+		<!-- navbar header -->
+		<div class="navbar-header">
+			<a href="1" class="navbar-brand">
+				<span class="brand-name hidden-fold">GPnow! | Team Not Really</span>
+			</a>
+		</div><!-- .navbar-header -->
+		<div class="collapse navbar-collapse" id="site-navbar-collapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item dropdown">
+					<a href="javascript:void(0)" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="zmdi zmdi-hc-lg zmdi-notifications"></i></a>
+					<div class="dropdown-menu media-list float-right animated scaleInDownLeft">
+					<!-- ADD NOTIFICATION -->
+					</div>
+				</li><!-- notification_feature -->
+			</ul>
+		</div><!-- /.navbar-collapse -->	</nav><!-- .site-navbar -->
+
+<main class="site-main">
+<div class="site-content">
+	<div class="container">
+			<div class="row">
+	<div class="col-md-6 col-sm-6">
+		<div class="widget p-3 clearfix">
+			<div class="float-left">
+				<h3 class="widget-title">Welcome Customer</h3>
+				<small class="text-color">Number of Days Since Last Order</small>
+			</div>
+			<span class="float-right fz-lg counter" data-plugin="counterUp">25</span>
+		</div><!-- /.widget -->
+	</div><!-- BOX 1 -->
+
+	<div class="col-md-6 col-sm-6">
+		<div class="widget p-3 clearfix">
+			<div class="float-left">
+				<h3 class="widget-title">Next Order</h3>
+				<small class="text-color">Number of Days for Your Next Order</small>
+			</div>
+			<span class="float-right fz-lg counter" data-plugin="counterUp">5</span>
+		</div><!-- /.widget -->
+	</div>
+</div><!-- /.row --><!-- BOX 2 -->
+
+<div class="row">
+	<div class="col-lg-3 col-sm-6">
+		<div class="widget stats-widget">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="widget-title text-primary"><span class="counter" data-plugin="counterUp">66.136</span>k</h3>
+					<small class="text-color">Avg. Delivery Time</small>
+				</div>
+			</div>
+			<footer class="widget-footer bg-primary">
+				<small>% charge</small>
+				<span class="small-chart float-right" id="dash1-sparkline-1"></span>
+			</footer>
+		</div><!-- /.widget -->
+	</div><!-- BOX 3 -->
+
+	<div class="col-lg-3 col-sm-6">
+		<div class="widget stats-widget">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="widget-title text-danger"><span class="counter" data-plugin="counterUp">3.490</span>k</h3>
+					<small class="text-color">Avg. Delay Time</small>
+				</div>
+			</div>
+			<footer class="widget-footer bg-primary">
+				<small>% charge</small>
+				<span class="small-chart float-right" id="dash1-sparkline-2"></span>
+			</footer>
+		</div><!-- /.widget -->
+	</div><!-- BOX 4 -->
+
+	<div class="col-lg-3 col-sm-6">
+		<div class="widget stats-widget">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="widget-title text-success"><span class="counter" data-plugin="counterUp">8.378</span>k</h3>
+					<small class="text-color">Avg. Amount Per Order</small>
+				</div>
+			</div>
+			<footer class="widget-footer bg-primary">
+				<small>% charge</small>
+				<span class="small-chart float-right" id="dash1-sparkline-3"></span>
+			</footer>
+		</div><!-- /.widget -->
+	</div><!-- BOX 5 -->
+
+	<div class="col-lg-3 col-sm-6">
+		<div class="widget stats-widget">
+			<div class="widget-body">
+				<div class="float-left">
+					<h3 class="widget-title text-warning"><span class="counter" data-plugin="counterUp">3.490</span>k</h3>
+					<small class="text-color">Total Ordered</small>
+				</div>
+			</div>
+			<footer class="widget-footer bg-primary">
+				<small>% charge</small>
+				<span class="small-chart float-right" id="dash1-sparkline-4"></span>
+			</footer>
+		</div><!-- /.widget -->
+	</div><!-- BOX 6 -->
+</div><!-- /.row -->
+<!-- FIRST 4 BOXES -->
+
+<div class="widget p-4">
+	<div class="row">
+		<div class="col-md-5 col-sm-5">
+			<div>
+				<h3 class="widget-title fz-lg text-primary mb-4">Orders in 2017</h3>
+				<p class="mb-4">Here we can talk about our graph...</p>
+				<p class="font-italic">Description of the graph?</p>
+			</div>
+		</div>
+
+		<div class="col-md-7 col-sm-7">
+			<div>
+				<div id="dash1-flotchart-1" style="width: 100%; height: 230px;"></div>
+			</div>
+		</div>
+	</div><!-- /./row -->
+</div><!-- /.widget -->
+</div><!-- close_container -->
+<div class="row">
+	<div class="col-lg-13">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title">Orders</h4>
+			</header>
+			<hr class="widget-separator"/>
+			<div class="widget-body">
+				<div class="table-responsive">
+					<table class="table no-cellborder">
+						<thead>
+							<tr><th>Order ID</th><th>Grade ID</th><th>Width</th><th>Amount</th><th>Order Date</th><th>Delay Time</th><th>Delivery Date</th><th>Price</th><th>Coffee</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class="text-primary">Buyer</td><td>Denise Ann</td><td>150</td><td>150</td><td>9:23 AM</td><td>11/9/2015</td><td>Denise Ann</td><td>Denise Ann</td><td>Denise Ann</td></tr>
+							<tr><td class="text-primary">Buyer</td><td>Denise Ann</td><td>150</td><td>150</td><td>9:23 AM</td><td>11/9/2015</td><td>Denise Ann</td><td>Denise Ann</td><td>Denise Ann</td></tr>
+							<tr><td class="text-primary">Buyer</td><td>Denise Ann</td><td>150</td><td>150</td><td>9:23 AM</td><td>11/9/2015</td><td>Denise Ann</td><td>Denise Ann</td><td>Denise Ann</td></tr>
+							<tr><td class="text-primary">Buyer</td><td>Denise Ann</td><td>150</td><td>150</td><td>9:23 AM</td><td>11/9/2015</td><td>Denise Ann</td><td>Denise Ann</td><td>Denise Ann</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+</div><!-- /.row -->
+
+<div class="row">
+	<div class="col-lg-5">
+		<div class="widget">
+			<header class="widget-header">
+				<h4 class="widget-title">Qty. Ordered</h4>
+			</header>
+			<hr class="widget-separator"/>
+			<div class="widget-body">
+				<div class="table-responsive">
+					<table class="table no-cellborder">
+						<thead>
+							<tr><th>Quarter</th><th>Total</th></tr>
+						</thead>
+						<tbody>
+							<tr><td class="text-primary">Q1</td><td>$300k</td></tr>
+							<tr><td class="text-primary">Q2</td><td>$250k</td></tr>
+							<tr><td class="text-primary">Q3</td><td>$250k</td></tr>
+							<tr><td class="text-primary">Q4</td><td>$250k</td></tr>
+							<tr><td class="text-primary">YTD</td><td>2.5M</td></tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div><!-- /.widget -->
+	</div><!-- /.col -->
+
+	<div class="col-md-7">
+		<div class="widget google-chart">
+			<header class="widget-header">
+				<h4 class="widget-title">Delivery Analytics</h4>
+			</header>
+			<hr class="widget-separator"/>
+			<div class="widget-body">
+				<div id="dash1-flot-barchart" style="width: 100%; height: 220px;"></div>
+			</div>
+		</div><!-- /.widget -->
+	</div>
+</div><!-- /.row -->
+
+</div><!-- .site-content -->
+</main><!-- .site-main -->
+
+<!-- Video modal -->
+<div class="modal fade video-modal" id="video-modal" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <iframe src="about:blank" width="760" height="440" allowfullscreen></iframe>
+    </div>
+  </div>
+</div><!-- #video-modal -->
+
+<!-- site-wide JS plugins -->
+<script src="{% static '/assets/vendor/bower_components/jquery/dist/jquery.min.js' %}"></script>
+<script src="{% static '/assets/vendor/bower_components/tether/dist/js/tether.min.js' %}"></script>
+<script src="{% static '/assets/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js' %}"></script>
+<script src="{% static '/assets/vendor/bower_components/jquery-slimscroll/jquery.slimscroll.min.js' %}"></script>
+<script src="{% static '/assets/vendor/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js' %}"></script>
+<script src="{% static '/assets/vendor/bower_components/sweetalert/dist/sweetalert.min.js' %}"></script>
+<script src="{% static '/assets/vendor/bower_components/switchery/dist/switchery.min.js' %}"></script>
+<script src="{% static '/assets/vendor/bower_components/waypoints/lib/jquery.waypoints.min.js' %}"></script>
+<script src="{% static '/assets/vendor/bower_components/waypoints/lib/shortcuts/sticky.min.js' %}"></script>
+<script src="{% static '/assets/vendor/bower_components/counterup/jquery.counterup.min.js' %}"></script>
+<script src="{% static '/assets/global/js/plugins/firstlitter.js' %}"></script>
+<script src="{% static '/assets/global/js/plugins/video-modal.js' %}"></script>
+
+<!-- plugins for the current page -->
+<script src="{% static '/assets/vendor/flot/jquery.flot.min.js' %}"></script>
+<script src="{% static '/assets/vendor/flot/jquery.flot.resize.min.js' %}"></script>
+<script src="{% static '/assets/vendor/flot/jquery.flot.tooltip.min.js' %}"></script>
+<script src="{% static '/assets/vendor/flot/jquery.flot.curvedLines.js' %}"></script>
+<script src="{% static '/assets/vendor/flot/jquery.flot.categories.min.js' %}"></script>
+<script src="{% static '/assets/vendor/js/echarts.min.js' %}"></script>
+<script src="{% static '/assets/vendor/js/jquery.sparkline.min.js' %}"></script>
+<script src="{% static '/assets/vendor/owl-carousel/owl.carousel.min.js' %}"></script>
+
+<!-- site-wide scripts -->
+<script src="{% static '/assets/global/js/main.js' %}"></script>
+<script src="{% static '/topbar/js/site.js' %}"></script>
+<script src="{% static '/topbar/js/menubar.js' %}"></script>
+
+<!-- current page scripts -->
+<script src="{% static '/assets/examples/js/dashboards/dashboard.v1.js' %}"></script>
+</body>
+</html>

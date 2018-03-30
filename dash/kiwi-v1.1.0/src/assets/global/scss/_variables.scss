@@ -1,0 +1,88 @@
+@import './material-colors';
+
+$watermark: 	#edf0f5;
+$gray-dark:     #373a3c;
+$gray:          #55595c;
+$gray-light:    #818a91;
+$gray-lighter:  #eceeef;
+$gray-lightest: #f7f7f9;
+$brand-primary: $indigo-500;
+$brand-info: 	$blue-500;
+$brand-success: $green-500;
+$brand-warning: $orange-500;
+$brand-danger: 	$red-500;
+$brand-purple: 	$purple-500;
+$brand-pink: 	$pink-500;
+$brand-inverse: #3b3e47;
+$brand-dark: 	#282828;
+$brand-black: 	#282828;
+
+
+// social brands
+$brand-google-plus: #dd4b39;
+$brand-linkedin: 	#0077b5;
+$brand-dribbble: 	#ea4c89;
+$brand-facebook: 	#3b5998;
+$brand-twitter: 	#1da1f2;
+$brand-youtube: 	#cd201f;
+$brand-flickr: 		#ff0084;
+$brand-tumblr: 		#35465c;
+
+// color classes
+$title-color: 	$gray-dark;
+$text-color:  	#6a6c6f;
+$text-muted:  	$gray-light;
+$text-white:  	#ffffff;
+$bg-faded: 		#f5f7f9;
+$body-bg: 		#F6F6F6;
+$component-hover-bg: #f7f7f7;
+$border-color-default: #eee;
+
+
+$grid-gutter-width-base:24px;
+$navbar-height: 		64px;
+$menubar-top-height: 	64px;
+$menubar-width: 		240px;
+$menubar-width-fold: 	80px;
+
+// Cards
+$card-spacer-x:       1.5rem;
+$card-spacer-y:       .75rem;
+$card-margin-bottom:  $grid-gutter-width-base;
+$card-border-color:   darken($border-color-default, 4%);
+$card-cap-bg:         $component-hover-bg;
+
+// media
+$media-border-color: #f5f7f9;
+$media-link-hover-bg: #f5f7f9;
+
+// avatar
+$avatar-size-sm:       2.5rem !default;
+$avatar-size-lg:       4rem !default;
+$avatar-size-default:  3rem !default;
+$avatar-border-radius: 3px !default;
+
+// circles
+$circle-size-xs: 		2rem;
+$circle-size-sm: 		$avatar-size-sm;
+$circle-size-lg: 		$avatar-size-lg;
+$circle-size-default: 	$avatar-size-default;
+
+//= Paddings
+$padding-xs: 4px;
+$padding-sm: 12px;
+$padding-md: 16px;
+$padding-lg: 24px;
+$padding-xl: 32px;
+
+
+//= margins
+$margin-xs: 4px;
+$margin-sm: 12px;
+$margin-md: 16px;
+$margin-lg: 24px;
+$margin-xl: 32px;
+
+
+//= Misc variable 
+$backdrop-zIndex: 9999;

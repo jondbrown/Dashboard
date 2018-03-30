@@ -1,0 +1,97 @@
+/* [12. Menubar theme] */
+.site-menubar {
+	background: #fff;
+	box-shadow: 2px 2px 8px rgba(0,0,0,.08);
+}
+
+.site-user {
+	border-bottom: 1px solid $border-color-default;
+}
+
+.site-menu {
+	li.menu-section-heading {
+		color: #555;
+	}
+
+	li a {
+		color: #555;
+	}
+	
+	.menu-icon {
+		color: lighten(#555, 10%);
+	}
+	
+	li.open,
+	li.active,
+	li:hover {
+		background-color: rgba(darken(#fff, 5%), .5);
+	}
+}
+
+body.menubar-fold .site-menu {
+	li.open {
+		border-bottom-color: darken(#fff, 4%);
+	}
+	
+	> li.open,
+	> li > .submenu {
+		background: darken(#fff, 2%);
+	}
+
+	.submenu {
+		box-shadow: 4px 4px 8px rgba(0,0,0,.14);
+	}
+
+	> li > .submenu > li {
+		border-bottom: 1px solid darken(#fff, 4%);
+	}
+}
+
+// themes
+body.menubar-inverse {
+	.site-menubar {
+		background: $brand-inverse;
+	}
+	
+	.site-user {
+		border-bottom: 1px solid lighten($brand-inverse, 3%);
+	}
+
+	.site-menu {
+		li.menu-section-heading {
+			color: lighten($brand-inverse, 20%);
+		}
+
+		li a {
+			color: rgba(255,255,255, .7);
+		}
+		
+		.menu-icon {
+			color: inherit;
+		}
+		
+		li.open,
+		li.active,
+		li:hover {
+			background-color: rgba(darken($brand-inverse, 5%), .5);
+		}
+	}
+
+	&.menubar-fold .site-menu {
+		li.open {
+			border-bottom-color: darken($brand-inverse, 4%);
+		}
+
+		> li > .submenu {
+			background: darken($brand-inverse, 2%);
+		}
+		
+		.submenu {
+			box-shadow: none;
+		}
+
+		> li > .submenu > li {
+			border-bottom: 1px solid darken($brand-inverse, 4%);
+		}
+	}
+}

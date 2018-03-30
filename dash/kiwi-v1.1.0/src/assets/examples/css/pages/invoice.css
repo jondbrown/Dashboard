@@ -1,0 +1,6 @@
+.panel .table td,
+.panel .table th {
+  border-bottom: 1px solid #ccc;
+  padding: 12px; }
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImludm9pY2UuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOztFQUVFLDhCQUE4QjtFQUM5QixjQUFjLEVBQUUiLCJmaWxlIjoicGFnZXMvaW52b2ljZS5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIucGFuZWwgLnRhYmxlIHRkLFxuLnBhbmVsIC50YWJsZSB0aCB7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCAjY2NjO1xuICBwYWRkaW5nOiAxMnB4OyB9XG4iXX0= */

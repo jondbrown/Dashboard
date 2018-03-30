@@ -1,0 +1,76 @@
+/* Borders */
+.border-a-0 {
+	border: none !important;
+}
+
+.border-a-1 {
+	border: 1px solid $border-color-default !important;
+}
+
+.border-a-2 {
+	border: 2px solid $border-color-default !important;
+}
+
+.border-t-0 {
+	border-top: none !important;
+}
+
+.border-t-1 {
+	border-top: 1px solid $border-color-default !important;
+}
+
+.border-t-2 {
+	border-top: 2px solid $border-color-default !important;
+}
+
+.border-r-0 {
+	border-right: none !important;
+}
+
+.border-r-1 {
+	border-right: 1px solid $border-color-default !important;
+}
+
+.border-r-2 {
+	border-right: 2px solid $border-color-default !important;
+}
+
+.border-b-0 {
+	border-bottom: none !important;
+}
+
+.border-l-0 {
+	border-left: none !important;
+}
+
+.border-b-1 {
+	border-bottom: 1px solid $border-color-default !important;
+}
+
+.border-b-2 {
+	border-bottom: 2px solid $border-color-default !important;
+}
+
+.border-l-1 {
+	border-left: 1px solid $border-color-default !important;
+}
+
+.border-l-2 {
+	border-left: 2px solid $border-color-default !important;
+}
+
+.border-color-primary {
+	border-color: $brand-primary !important;
+}
+
+.border-color-success {
+	border-color: $brand-success !important;
+}
+
+.border-color-warning {
+	border-color: $brand-warning !important;
+}
+
+.border-color-danger {
+	border-color: $brand-danger !important;
+}

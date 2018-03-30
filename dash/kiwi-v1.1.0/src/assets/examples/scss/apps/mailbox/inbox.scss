@@ -1,0 +1,59 @@
+@import '../base';
+@import '../../_partials/mail-compose-modal';
+
+.mail-item {
+	background: #fff;
+	margin-bottom: 1rem;
+	padding: 1rem;
+	border-radius: 3px;
+	box-shadow: 0 0 1px rgba(0,0,0,.15);
+
+	.badge {
+		font-size: .63rem;
+		padding: .125rem .5rem;
+	}
+
+	@include media-breakpoint-down(xs) {
+		margin-bottom: .75rem;
+		padding: .75rem;
+
+		.avatar {
+			width: $avatar-size-sm;
+			height: $avatar-size-sm;
+		}
+
+		.mail-item-heading {
+			font-size: 1rem;
+		}
+	}
+}
+
+.mail-item-heading {
+	font-size: 1.125rem;
+	display: inline-block;
+	margin-right: 1rem;
+	margin-bottom: 0;
+	> a {
+		color: $title-color;
+	}
+}
+
+.mail-item-excerpt {
+	margin-bottom: 0;
+	color: $text-muted;
+}
+
+.mail-item-timestamp {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.mail-item-star {
+	&:focus {
+		color: $text-muted;
+	}
+	&.starred,
+	&.starred:focus,
+	&:hover {
+		color: $brand-warning;
+	}
+}

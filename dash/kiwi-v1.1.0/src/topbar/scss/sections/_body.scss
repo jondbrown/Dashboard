@@ -1,0 +1,30 @@
+html {
+	height: 100%;
+}
+
+body {
+	position: relative;
+	min-height: 100%;
+	padding-top: $navbar-height;
+	transition: padding-top .35s;
+
+	@include media-breakpoint-down(md) {
+		&.menubar-open {
+			height: 100%;
+			overflow: hidden;
+		}
+
+		&.navbar-collapse-in {
+			padding-top: $navbar-height * 2;
+		}
+	}
+
+	@include media-breakpoint-up(lg) {
+		&.menubar-top {
+			padding-top: $navbar-height + $menubar-top-height;
+			.hidden-top {
+				display: none;
+			}
+		}
+	}
+}

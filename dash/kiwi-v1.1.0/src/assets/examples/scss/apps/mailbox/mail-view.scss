@@ -1,0 +1,31 @@
+@import '../base';
+@import '../../_partials/mail-compose-modal';
+
+.reply-editor {
+	.reply-email {
+		@include reset-input;
+		display: block;
+		width: 100%;
+		padding: 1rem;
+		border-bottom: 1px solid $border-color-default;
+	}
+
+	.reply-content {
+		@include reset-input;
+		display: block;
+		width: 100%;
+		height: 140px;
+		padding: 1rem;
+		resize: none;
+		color: $text-color;
+	}
+
+	.reply-editor-footer {
+		display: flex;
+		justify-content: space-between;
+		padding: .75rem 1rem;
+		background: $bg-faded;
+		border-top: 1px solid $border-color-default;
+		box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+	}
+}

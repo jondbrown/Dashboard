@@ -1,0 +1,506 @@
+---
+body_classes: profile no-padding
+title: Profile
+page:
+  styles:
+    - ../assets/examples/css/pages/profile.css
+  css_plugins:
+    - ../assets/vendor/bower_components/lightbox2/dist/css/lightbox.min.css
+  js_plugins:
+    - ../assets/vendor/bower_components/lightbox2/dist/js/lightbox.min.js
+---
+
+<div class="profile-header">
+	<div class="profile-header-cover">
+		<div class="d-flex align-items-center justify-content-center mb-4">
+			<div>
+				<button class="btn-icon btn-icon-flip btn-rounded btn-lg bg-white">
+					<i class="fa fa-heart-o text-muted"></i>
+					<i class="fa fa-heart-o bg-danger text-white"></i>
+				</button>
+			</div>
+			<div>
+				<div class="avatar avatar-lg avatar-circle mx-4">
+					<a href="javascript:void(0)">
+						<img src="../assets/global/images/221.jpg" alt="avatar"/>
+					</a>
+				</div><!-- .avatar -->
+			</div>
+			<div>
+				<button class="btn-icon btn-icon-flip btn-rounded btn-lg bg-white">
+					<i class="fa fa-envelope-o text-muted"></i>
+					<i class="fa fa-envelope-o bg-info text-white"></i>
+				</button>
+			</div>
+		</div>
+		<div class="text-center">
+			<h5 class="mb-4"><a href="javascript:void(0)">John Doe</a></h5>
+			<div class="d-flex justify-content-center">
+				<a href="javascript:void(0)" class="mr-5 theme-color"><i class="fa fa-bolt mr-1"></i> Web Developer</a>
+				<a href="javascript:void(0)" class="theme-color"><i class="fa fa-map-marker mr-1"></i>Cairo, Egypt</a>
+			</div>
+		</div>
+	</div><!-- ./profile-header-cover -->
+
+	<div class="profile-header-bottom">
+		<div>
+			<small>Experience</small>
+			<h5 class="m-0 mt-1">+2 years</h5>
+		</div>
+		<div>
+			<small>Hourly Rate</small>
+			<h5 class="m-0 mt-1">12$ - 25$</h5>
+		</div>
+		<div>
+			<small>Reviews</small>
+			<div class="mt-1">
+				<i class="text-primary fa fa-star"></i>
+				<i class="text-primary fa fa-star"></i>
+				<i class="text-primary fa fa-star"></i>
+				<i class="text-primary fa fa-star"></i>
+				<i class="text-primary fa fa-star-o"></i>
+			</div>
+		</div>
+	</div><!-- ./profile-header-bottom -->
+</div><!-- ./profile-header -->
+
+<div class="profile-content">
+	<div class="row">
+		<div class="col-md-8">
+			<div class="status-editor mb-4">
+				<form>
+					<textarea name="status_content" id="status-content" class="status-content" cols="30" rows="10" placeholder="Write Something Impressive..."></textarea>
+					<div class="status-editor-footer">
+						<div>
+							<a href="javascript:void(0)" class="btn btn-secondary"><i class="fa fa-video-camera"></i></a>
+							<a href="javascript:void(0)" class="btn btn-secondary"><i class="fa fa-camera"></i></a>
+						</div>
+						<button type="button" class="btn btn-primary">Post</button>
+					</div>
+				</form>
+			</div><!-- ./status-editor -->
+			
+			<div class="profile-main mb-4">
+				<!-- tabs list -->
+				<ul id="profile-nav-tabs" class="nav nav-tabs" role="tablist">
+					<li role="presentation" class="nav-item">
+						<a href="#profile-stream" class="nav-link active" aria-controls="profile-stream" role="tab" data-toggle="tab">Stream</a>
+					</li>
+					<li role="presentation" class="nav-item">
+						<a href="#profile-photos" class="nav-link" aria-controls="profile-photos" role="tab" data-toggle="tab">Photos</a>
+					</li>
+					<li role="presentation" class="nav-item">
+						<a href="#profile-friends" class="nav-link" aria-controls="profile-friends" role="tab" data-toggle="tab">Friends</a>
+					</li>
+				</ul><!-- .nav-tabs -->
+
+				<!-- Tab panes -->
+				<div class="tab-content">
+					<div role="tabpanel" class="tab-pane active" id="profile-stream">
+						<div class="media stream-post">
+							<div class="avatar avatar-circle">
+								<img src="../assets/global/images/221.jpg" alt="">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading mt-1">
+									<a href="javascript:void(0)" class="sp-auther">John Doe</a>
+									<small class="text-muted">posted an update</small>
+								</h4>
+								<small class="sp-meta">Active 14 minute ago</small>
+								<div class="sp-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae neque incidunt cumque, dolore eveniet porro asperiores itaque! Eligendi minus cupiditate molestiae praesentium, facilis, neque saepe, soluta sapiente aliquid modi sunt.</p>
+								</div>
+							</div>
+						</div><!-- .stream-post -->
+
+						<div class="media stream-post">
+							<div class="avatar avatar-circle">
+								<img src="../assets/global/images/101.jpg" alt="">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading mt-1">
+									<a href="javascript:void(0)" class="sp-auther">Adam Khaury</a>
+									<small class="text-muted">posted an update</small>
+								</h4>
+								<small class="sp-meta">Active 25 minutes ago</small>
+								<div class="sp-content">
+									<a href="../assets/global/images/102.jpg" data-lightbox="feed-img-1">
+										<img class="sp-image" src="../assets/global/images/102.jpg" alt="">
+									</a>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae neque incidunt cumque, dolore eveniet porro asperiores itaque! Eligendi minus cupiditate molestiae praesentium, facilis, neque saepe, soluta sapiente aliquid modi sunt.</p>
+								</div>
+							</div>
+						</div><!-- .stream-post -->
+
+						<div class="media stream-post">
+							<div class="avatar avatar-circle">
+								<img src="../assets/global/images/204.jpg" alt="">
+							</div>
+							<div class="media-body">
+								<h4 class="media-heading mt-1">
+									<a href="javascript:void(0)" class="sp-auther">Dani Smith</a>
+									<small class="text-muted">has birthday</small>
+								</h4>
+								<small class="sp-meta">Active now</small>
+								<div class="sp-content">
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae neque incidunt cumque, dolore eveniet porro asperiores itaque! Eligendi minus cupiditate molestiae praesentium, facilis, neque saepe, soluta sapiente aliquid modi sunt.</p>
+								</div>
+							</div>
+						</div><!-- .stream-post -->
+					</div><!-- /.tab-pane -->
+
+					<div role="tabpanel" id="profile-photos" class="tab-pane p-3">
+						<div class="img-gallery img-gallery-zoom-effect">
+							<div class="row">
+								<div class="col-6 col-md-4">
+									<a href="../assets/global/images/demo-img-11.jpg" class="g__item rounded" data-lightbox="profile-gallery" data-title="image">
+										<figure class="g__figure">
+											<img src="../assets/global/images/demo-img-11.jpg" alt="">
+											<figcaption class="g__overlay">
+												<i class="g__zoom fa fa-search fa-2x"></i>
+											</figcaption>
+										</figure>
+									</a><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-6 col-md-4">
+									<a href="../assets/global/images/demo-img-12.jpg" class="g__item rounded" data-lightbox="profile-gallery" data-title="image">
+										<figure class="g__figure">
+											<img src="../assets/global/images/demo-img-12.jpg" alt="">
+											<figcaption class="g__overlay">
+												<i class="g__zoom fa fa-search fa-2x"></i>
+											</figcaption>
+										</figure>
+									</a><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-6 col-md-4">
+									<a href="../assets/global/images/demo-img-13.jpg" class="g__item rounded" data-lightbox="profile-gallery" data-title="image">
+										<figure class="g__figure">
+											<img src="../assets/global/images/demo-img-13.jpg" alt="">
+											<figcaption class="g__overlay">
+												<i class="g__zoom fa fa-search fa-2x"></i>
+											</figcaption>
+										</figure>
+									</a><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-6 col-md-4">
+									<a href="../assets/global/images/demo-img-14.jpg" class="g__item rounded" data-lightbox="profile-gallery" data-title="image">
+										<figure class="g__figure">
+											<img src="../assets/global/images/demo-img-14.jpg" alt="">
+											<figcaption class="g__overlay">
+												<i class="g__zoom fa fa-search fa-2x"></i>
+											</figcaption>
+										</figure>
+									</a><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-6 col-md-4">
+									<a href="../assets/global/images/demo-img-15.jpg" class="g__item rounded" data-lightbox="profile-gallery" data-title="image">
+										<figure class="g__figure">
+											<img src="../assets/global/images/demo-img-15.jpg" alt="">
+											<figcaption class="g__overlay">
+												<i class="g__zoom fa fa-search fa-2x"></i>
+											</figcaption>
+										</figure>
+									</a><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-6 col-md-4">
+									<a href="../assets/global/images/demo-img-16.jpg" class="g__item rounded" data-lightbox="profile-gallery" data-title="image">
+										<figure class="g__figure">
+											<img src="../assets/global/images/demo-img-16.jpg" alt="">
+											<figcaption class="g__overlay">
+												<i class="g__zoom fa fa-search fa-2x"></i>
+											</figcaption>
+										</figure>
+									</a><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-6 col-md-4">
+									<a href="../assets/global/images/demo-img-17.jpg" class="g__item rounded" data-lightbox="profile-gallery" data-title="image">
+										<figure class="g__figure">
+											<img src="../assets/global/images/demo-img-17.jpg" alt="">
+											<figcaption class="g__overlay">
+												<i class="g__zoom fa fa-search fa-2x"></i>
+											</figcaption>
+										</figure>
+									</a><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-6 col-md-4">
+									<a href="../assets/global/images/demo-img-18.jpg" class="g__item rounded" data-lightbox="profile-gallery" data-title="image">
+										<figure class="g__figure">
+											<img src="../assets/global/images/demo-img-18.jpg" alt="">
+											<figcaption class="g__overlay">
+												<i class="g__zoom fa fa-search fa-2x"></i>
+											</figcaption>
+										</figure>
+									</a><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-6 col-md-4">
+									<a href="../assets/global/images/demo-img-19.jpg" class="g__item rounded" data-lightbox="profile-gallery" data-title="image">
+										<figure class="g__figure">
+											<img src="../assets/global/images/demo-img-19.jpg" alt="">
+											<figcaption class="g__overlay">
+												<i class="g__zoom fa fa-search fa-2x"></i>
+											</figcaption>
+										</figure>
+									</a><!-- /.g__item -->
+								</div><!-- /.col- -->
+							</div><!-- /.row -->
+						</div><!-- /.img-gallery -->
+					</div><!-- /.tab-pane -->
+
+					<div role="tabpanel" class="tab-pane p-3" id="profile-friends">
+						<div class="row">
+							<div class="col-lg-6 col-md-12 col-sm-6">
+								<div class="card p-1 bg-faded">
+									<div class="media align-items-center p-3">
+										<div class="avatar avatar-circle">
+											<img src="../assets/global/images/214.jpg" alt="">
+											<i class="status status-online"></i>
+										</div>
+										<div class="media-body">
+											<h6 class="media-heading"><a href="#">Clementina Blazier</a></h6>
+											<small class="media-meta">Android Developer</small>
+										</div><!-- /.media-body -->
+									</div><!-- /.media -->
+								</div><!-- /.card -->
+							</div><!-- /.col -->
+
+							<div class="col-lg-6 col-md-12 col-sm-6">
+								<div class="card p-1 bg-faded">
+									<div class="media align-items-center p-3">
+										<div class="avatar avatar-circle">
+											<img src="../assets/global/images/201.jpg" alt="">
+											<i class="status status-online"></i>
+										</div>
+										<div class="media-body">
+											<h6 class="media-heading"><a href="#">John Doe</a></h6>
+											<small class="media-meta">Web Developer</small>
+										</div><!-- /.media-body -->
+									</div><!-- /.media -->
+								</div><!-- /.card -->
+							</div><!-- /.col -->
+
+							<div class="col-lg-6 col-md-12 col-sm-6">
+								<div class="card p-1 bg-faded">
+									<div class="media align-items-center p-3">
+										<div class="avatar avatar-circle">
+											<img src="../assets/global/images/202.jpg" alt="">
+											<i class="status status-away"></i>
+										</div>
+										<div class="media-body">
+											<h6 class="media-heading"><a href="#">Sandy Matt</a></h6>
+											<small class="media-meta">Web Designer</small>
+										</div><!-- /.media-body -->
+									</div><!-- /.media -->
+								</div><!-- /.card -->
+							</div><!-- /.col -->
+
+							<div class="col-lg-6 col-md-12 col-sm-6">
+								<div class="card p-1 bg-faded">
+									<div class="media align-items-center p-3">
+										<div class="avatar avatar-circle">
+											<img src="../assets/global/images/204.jpg" alt="">
+											<i class="status status-away"></i>
+										</div>
+										<div class="media-body">
+											<h6 class="media-heading"><a href="#">Adam Smith</a></h6>
+											<small class="media-meta">Software Engineer</small>
+										</div><!-- /.media-body -->
+									</div><!-- /.media -->
+								</div><!-- /.card -->
+							</div><!-- /.col -->
+
+							<div class="col-lg-6 col-md-12 col-sm-6">
+								<div class="card p-1 bg-faded">
+									<div class="media align-items-center p-3">
+										<div class="avatar avatar-circle">
+											<img src="../assets/global/images/205.jpg" alt="">
+											<i class="status status-away"></i>
+										</div>
+										<div class="media-body">
+											<h6 class="media-heading"><a href="#">Sarah Smith</a></h6>
+											<small class="media-meta">UI/UX designer</small>
+										</div><!-- /.media-body -->
+									</div><!-- /.media -->
+								</div><!-- /.card -->
+							</div><!-- /.col -->
+
+							<div class="col-lg-6 col-md-12 col-sm-6">
+								<div class="card p-1 bg-faded">
+									<div class="media align-items-center p-3">
+										<div class="avatar avatar-circle">
+											<img src="../assets/global/images/206.jpg" alt="">
+											<i class="status status-busy"></i>
+										</div>
+										<div class="media-body">
+											<h6 class="media-heading"><a href="#">Jeffery Way</a></h6>
+											<small class="media-meta">PHP developer</small>
+										</div><!-- /.media-body -->
+									</div><!-- /.media -->
+								</div><!-- /.card -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!-- /.tab-pane -->
+				</div><!-- /.tab-content -->
+			</div><!-- /.profile-main -->
+		</div><!-- ./col -->
+
+		<div class="col-md-4">
+			<div class="row">
+				<div class="col-md-12 col-sm-6">
+					<div class="widget">
+						<div class="widget-header py-4 px-3">
+							<h5 class="widget-title">Who To Follow</h5>
+						</div>
+						<hr class="widget-separator m-0">
+						<div class="media-list">
+							<div class="media align-items-center">
+								<div class="avatar avatar-circle">
+									<img src="../assets/global/images/221.jpg" alt="">
+									<i class="status status-online"></i>
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading"><a href="javascript:void(0)">John Doe</a></h5>
+									<small class="media-meta">Software Engineer</small>
+								</div>
+								<button class="btn btn-secondary btn-sm">Follow</button>
+							</div><!-- ./media -->
+
+							<div class="media align-items-center">
+								<div class="avatar avatar-circle">
+									<img src="../assets/global/images/101.jpg" alt="">
+									<i class="status status-busy"></i>
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading"><a href="javascript:void(0)">Adam Khaury</a></h5>
+									<small class="media-meta">Web Designer</small>
+								</div>
+								<button class="btn btn-secondary btn-sm">Follow</button>
+							</div><!-- ./media -->
+
+							<div class="media align-items-center">
+								<div class="avatar avatar-circle">
+									<img src="../assets/global/images/209.jpg" alt="">
+									<i class="status status-busy"></i>
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading"><a href="javascript:void(0)">John Doe</a></h5>
+									<small class="media-meta">Web Developer</small>
+								</div>
+								<button class="btn btn-secondary btn-sm">Follow</button>
+							</div><!-- ./media -->
+
+							<div class="media align-items-center">
+								<div class="avatar avatar-circle">
+									<img src="../assets/global/images/203.jpg" alt="">
+									<i class="status status-away"></i>
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading"><a href="javascript:void(0)">Sara Smith</a></h5>
+									<small class="media-meta">UI/UX Designer</small>
+								</div>
+								<button class="btn btn-secondary btn-sm">Follow</button>
+							</div><!-- ./media -->
+
+							<div class="media align-items-center">
+								<div class="avatar avatar-circle">
+									<img src="../assets/global/images/204.jpg" alt="">
+									<i class="status status-away"></i>
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading"><a href="javascript:void(0)">Dani Smith</a></h5>
+									<small class="media-meta">Teacher Assistant</small>
+								</div>
+								<button class="btn btn-secondary btn-sm">Follow</button>
+							</div><!-- ./media -->
+
+							<div class="media align-items-center">
+								<div class="avatar avatar-circle">
+									<img src="../assets/global/images/202.jpg" alt="">
+									<i class="status status-away"></i>
+								</div>
+								<div class="media-body">
+									<h5 class="media-heading"><a href="javascript:void(0)">Sally Sally</a></h5>
+									<small class="media-meta">Teacher Assistant</small>
+								</div>
+								<button class="btn btn-secondary btn-sm">Follow</button>
+							</div><!-- ./media -->
+						</div><!-- ./media-list -->
+					</div><!-- .widget -->
+				</div><!-- ./col -->
+
+				<div class="col-md-12 col-sm-6">
+					<div class="widget navigation-widget">
+						<div class="widget-header py-4 px-3">
+							<h5 class="widget-title">Featured Photos</h5>
+						</div>
+						<hr class="widget-separator m-0">
+						<div class="img-gallery profile-aside-gallery px-3 pt-3 pb-2">
+							<div class="row">
+								<div class="col-sm-6 col-md-4">
+									<div class="g__item rounded">
+										<a href="#"><img class="g__img" src="../assets/global/images/demo-img-19.jpg" alt=""></a>
+									</div><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-sm-6 col-md-4">
+									<div class="g__item rounded">
+										<a href="#"><img class="g__img" src="../assets/global/images/demo-img-111.jpg" alt=""></a>
+									</div><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-sm-6 col-md-4">
+									<div class="g__item rounded">
+										<a href="#"><img class="g__img" src="../assets/global/images/demo-img-12.jpg" alt=""></a>
+									</div><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-sm-6 col-md-4">
+									<div class="g__item rounded">
+										<a href="#"><img class="g__img" src="../assets/global/images/demo-img-13.jpg" alt=""></a>
+									</div><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-sm-6 col-md-4">
+									<div class="g__item rounded">
+										<a href="#"><img class="g__img" src="../assets/global/images/demo-img-14.jpg" alt=""></a>
+									</div><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-sm-6 col-md-4">
+									<div class="g__item rounded">
+										<a href="#"><img class="g__img" src="../assets/global/images/demo-img-15.jpg" alt=""></a>
+									</div><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-sm-6 col-md-4">
+									<div class="g__item rounded">
+										<a href="#"><img class="g__img" src="../assets/global/images/demo-img-17.jpg" alt=""></a>
+									</div><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-sm-6 col-md-4">
+									<div class="g__item rounded">
+										<a href="#"><img class="g__img" src="../assets/global/images/demo-img-18.jpg" alt=""></a>
+									</div><!-- /.g__item -->
+								</div><!-- /.col- -->
+
+								<div class="col-sm-6 col-md-4">
+									<div class="g__item rounded">
+										<a href="#"><img class="g__img" src="../assets/global/images/demo-img-112.jpg" alt=""></a>
+									</div><!-- /.g__item -->
+								</div><!-- /.col- -->
+							</div><!-- /.row -->
+						</div><!-- /.img-gallery -->
+					</div><!-- .widget -->
+				</div><!-- ./col -->
+			</div><!-- ./row -->
+		</div><!-- ./col -->
+	</div><!-- ./row -->
+</div><!-- ./profile-content -->

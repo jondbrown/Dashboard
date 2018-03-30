@@ -1,0 +1,22 @@
+/* Custom animations */
+@keyframes scaleIn {
+	from {
+		transform: scale(0);
+	}
+
+	to {
+		transform: scale(1);
+	}
+}
+
+.scaleInDownLeft {
+	animation-duration: .25s;
+	transform-origin: right top;
+	animation-name: scaleIn;
+}
+
+.scaleInDownRight {
+	animation-duration: .25s;
+	transform-origin: left top;
+	animation-name: scaleIn;
+}

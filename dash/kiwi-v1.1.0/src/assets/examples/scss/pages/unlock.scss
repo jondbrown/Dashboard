@@ -1,0 +1,32 @@
+@import '../../../global/scss/core';
+@import '../_partials/simple-pages-main';
+
+.page-unlock {
+	.simple-page-content {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+		@include media-breakpoint-only(sm) {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+}
+
+#unlock-password-field {
+	@include reset-input;
+	border-radius: 0;
+	text-align: center;
+	color: #fff;
+	background-color: transparent;
+	height: 40px;
+	border-bottom: 1px solid #ccc;
+	&::-webkit-input-placeholder {
+		color: #fff;
+	}
+	&::-moz-placeholder {
+		color: #fff;
+	}
+	&:-ms-input-placeholder {
+		color: #fff;
+	}
+}
